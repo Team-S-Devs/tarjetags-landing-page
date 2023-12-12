@@ -1,0 +1,53 @@
+@import url("../../global.css");
+
+.cover-container {
+  display: grid;
+  height: 980px;
+  max-width: 1920px;
+  max-height: calc(100vh - 80px);
+  padding: 40px 80px;
+  grid-template-columns: 50% 50%;
+  background: var(--background-gradient);
+  color: #fff;
+}
+
+.cover-sub-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cover-sub-container.left {
+  align-items: first baseline;
+}
+
+.slogan-cover {
+  font-family: var(--font-family-title);
+  font-size: 4vw;
+}
+
+.paragraph-slogan-cover {
+  font-size: 2vw;
+}
+
+.sign-up-cover {
+  display: flex;
+  width: 300px;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  border: 1px solid #fff;
+  margin-top: 40px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 24px;
+}
+
+.sign-up-cover:hover {
+    background-color: #fff;
+    color: #733EE8;
+}

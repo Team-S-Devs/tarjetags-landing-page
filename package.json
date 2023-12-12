@@ -12,6 +12,8 @@
   "dependencies": {
     "@firebase/firestore": "^4.3.0",
     "@firebase/storage": "^0.11.2",
+    "@splinetool/react-spline": "^2.2.6",
+    "@splinetool/runtime": "^0.9.522",
     "firebase": "^10.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

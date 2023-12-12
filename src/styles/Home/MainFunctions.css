@@ -1,0 +1,52 @@
+.main-functions-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+}
+
+.subtitle-functions {
+  text-align: center;
+  font-family: var(--font-family-title);
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  background: var(--background-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.functionality-container {
+  width: 600px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+
+.functionality-container.left {
+  inset: 100px 40px;
+}
+
+.functionality-container.right {
+  right: 40px;
+  bottom: 100px;
+  text-align: right;
+}
+
+.functionality-name {
+  background: var(--background-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 48px;
+  width: 100%;
+}
