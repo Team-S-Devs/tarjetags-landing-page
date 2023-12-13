@@ -1,7 +1,12 @@
+import Loader from "../components/General/Loader";
+
 const Plans = () => {
   return (
-    <div>Plans</div>
-  )
+    <>
+      <Loader />
+      <div>Plans</div>
+    </>
+  );
 }
 
 export default Plans

@@ -1,16 +1,30 @@
 import "../../styles/Header.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import PropTypes from 'prop-types'
 
 const Header = ({ currentlyPage, isLoggedTheUser }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false)
 
   const openMenu = () => {
     setIsOpen(!isOpen);
+    document.querySelector('.body').classList.toggle('menu-open')
   };
 
+  const handleScroll = () => {
+    if (window.scrollY > 100) {
+      setScrolled(true);
+    } else {
+      setScrolled(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <header className="header">
+    <header className={`header ${scrolled ? 'fix-header' : ''}`}>
       <img src="" alt="Logo tarjetags" className="logo-tarjetags" />
 
       <nav className={` menu ${isOpen ? "active" : ""} `}>

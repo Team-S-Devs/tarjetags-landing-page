@@ -1,7 +1,12 @@
+import Loader from "../components/General/Loader"
+
 function LogIn() {
   return (
-    <div>LogIn</div>
-  )
+    <>
+      <Loader />
+      <div>LogIn</div>
+    </>
+  );
 }
 
 export default LogIn

@@ -26,6 +26,10 @@ body {
 	overflow-x: hidden;
 }
 
+.body.menu-open {
+	overflow: hidden;
+}
+
 :root {
 	--primary-color: #733EE8;
 }

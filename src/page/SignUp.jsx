@@ -1,7 +1,12 @@
+import Loader from "../components/General/Loader"
+
 const SignUp = () => {
   return (
-    <div>SignUp</div>
-  )
+    <>
+      <Loader />
+      <div>SignUp</div>
+    </>
+  );
 }
 
 export default SignUp

@@ -1,0 +1,34 @@
+.loader-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    display: none;
+    position: relative;
+    z-index: 1000;
+}
+
+.loader-container.loading-active {
+    display: block;
+}
+
+@keyframes load {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 4px solid #733EE8;
+    border-bottom: 4px solid #fff;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    animation: load 0.5s infinite;
+}

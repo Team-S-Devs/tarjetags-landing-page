@@ -12,7 +12,7 @@ const Cover = () => {
         </a>
       </div>
       <div className="cover-sub-container right">
-        <Spline scene="https://prod.spline.design/JN0USfxoeS2AdOoT/scene.splinecode" />
+        <Spline scene="https://prod.spline.design/JN0USfxoeS2AdOoT/scene.splinecode" className="spline-cover-one" />
       </div>
     </div>
   );
