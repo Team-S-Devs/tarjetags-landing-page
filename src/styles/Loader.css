@@ -3,12 +3,14 @@
     height: 100vh;
     background-color: #fff;
     display: none;
-    position: relative;
-    z-index: 1000;
 }
 
 .loader-container.loading-active {
     display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
 }
 
 @keyframes load {

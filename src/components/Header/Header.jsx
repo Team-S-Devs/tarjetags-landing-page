@@ -68,10 +68,10 @@ const Header = ({ currentlyPage, isLoggedTheUser }) => {
         } `}
       >
         <div className="option-logged-container">
-          <a href="" className="options-logged go-dashboard">
+          <a href="/" className="options-logged go-dashboard">
             Panel Principal
           </a>
-          <a href="" className="options-logged user-profile">
+          <a href="/" className="options-logged user-profile">
             <img
               src="https://images.pexels.com/photos/16963436/pexels-photo-16963436/free-photo-of-a-woman-with-blue-hair-making-the-peace-sign.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
               alt="User image profile"
