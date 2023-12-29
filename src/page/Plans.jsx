@@ -1,10 +1,11 @@
 import Loader from "../components/General/Loader";
+import BannerTittle from "../components/Prices/BannerTittle";
 
 const Plans = () => {
   return (
     <>
-      <Loader />
-      <div>Plans</div>
+      <BannerTittle/>
+      <div>Planes juas</div>
     </>
   );
 }
