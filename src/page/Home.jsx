@@ -1,12 +1,12 @@
-import Loader from "../components/General/Loader";
-import Cover from "../components/Home/Cover"
+import { Comments } from "../components/Home/Comments";
+import Cover from "../components/Home/Cover";
 import MainFunctions from "../components/Home/MainFunctions";
 import "../styles/Home/Home.css";
 
 const Home = () => {
+
   return (
     <>
-      <Loader />
       <div className="home-page">
         <Cover />
         <MainFunctions />
@@ -26,9 +26,10 @@ const Home = () => {
             draggable={false}
           />
         </div>
+        <Comments />
       </div>
     </>
   );
-}
+};
 
-export default Home
+export default Home;

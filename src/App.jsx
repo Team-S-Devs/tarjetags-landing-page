@@ -7,6 +7,7 @@ import Plans from "./page/Plans";
 import SignUp from "./page/SignUp"
 import LogIn from "./page/LogIn";
 import PropTypes from "prop-types";
+import { Footer } from "./components/Footer/Footer";
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
         <Route path="/sign-up" element={<SignUp />} />
         <Route path="/log-in" element={<LogIn />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }

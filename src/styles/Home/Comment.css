@@ -1,0 +1,50 @@
+.comment-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.comment-container.left {
+    left: -100%;
+}
+
+.comment-container.right {
+    left: 100%;
+}
+
+.comment-container.center {
+    left: 0;
+}
+
+.profile-image-section {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.comment-section {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+}
+
+@media (max-width: 1140px) {
+    .comment-section {
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    .profile-image-section {
+        width: 200px;
+        height: 200px;
+    }
+}
