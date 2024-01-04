@@ -32,4 +32,5 @@ body {
 
 :root {
 	--primary-color: #733EE8;
+	--second-color: linear-gradient(90deg, #9747FF 0%, #D273FF 100%);
 }
