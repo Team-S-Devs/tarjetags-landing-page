@@ -26,12 +26,12 @@
     width: 100%;
     height: 100px;
     
-    margin-top: 20px; /* Ajusta esta propiedad según sea necesario */
+    margin-top: 20px; 
 }
 
 .ribbon {
-    --f: 10px; /* control the folded part*/
-    --r: 15px; /* control the ribbon shape */
+    --f: 10px; 
+    --r: 15px; 
     
     position: absolute;
     top: 0px;

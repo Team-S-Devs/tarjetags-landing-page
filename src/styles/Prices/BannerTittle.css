@@ -16,6 +16,10 @@
 
 .images-container{
     display: flex;
+    width: 100%;
+    height: 100%;
+    max-width: 400px;
+    max-height: 400px;
 }
 
 .text-container{
@@ -77,6 +81,11 @@
     width: 23px;
     height: 23px;
     color: white;
+}
+
+.img-plans{
+    width: 100%;
+    height: 100%;
 }
 
 @media (max-width: 768px ) {

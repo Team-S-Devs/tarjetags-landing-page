@@ -10,7 +10,6 @@ const Plans = () => {
       <BannerTittle/>
       <PricesSection/>
       <TableComparePlans/>
-      <div>Planes juas</div>
     </>
   );
 }
