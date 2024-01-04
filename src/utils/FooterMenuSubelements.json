@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name-section": "Menú",
+        "subelements": [
+            {
+                "id": 11,
+                "subelement-name": "Inicio",
+                "path": "/"
+            },
+            {
+                "id": 12,
+                "subelement-name": "Planes",
+                "path": "/plans"
+            },
+            {
+                "id": 13,
+                "subelement-name": "FAQ",
+                "path": "/faq"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name-section": "Información",
+        "subelements": [
+            {
+                "id": 21,
+                "subelement-name": "Términos y condiciones",
+                "path": "/"
+            },
+            {
+                "id": 22,
+                "subelement-name": "Políticas de privacidad",
+                "path": "/"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name-section": "Soporte",
+        "subelements": [
+            {
+                "id": 31,
+                "subelement-name": "Contáctanos",
+                "path": "/"
+            }
+        ]
+    }
+]
