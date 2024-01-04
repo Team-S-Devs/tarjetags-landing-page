@@ -67,12 +67,24 @@ const Faq = () => {
       heading: "Aqui viene la pregunta 3",
       content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.",
     },
+    {
+      id: "panel4a-header",
+      ariaControls: "panel4a-content",
+      heading: "Aqui viene la pregunta 4",
+      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.",
+    },
+    {
+      id: "panel5a-header",
+      ariaControls: "panel5a-content",
+      heading: "Aqui viene la pregunta 5",
+      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.",
+    },
   ];
 
   return (
     <>
     <div className="center-title" >
-        <Typography>FAQ</Typography>
+        <Typography variant="h4" fontWeight="bold">FAQ</Typography>
     </div>
     <div className="center-container">
       <div>
