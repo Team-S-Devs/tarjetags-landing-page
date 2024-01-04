@@ -14,6 +14,10 @@
     padding-bottom: 45px;
 }
 
+.images-container{
+    display: flex;
+}
+
 .text-container{
     display: flex;
     flex-direction: column;
@@ -73,4 +77,15 @@
     width: 23px;
     height: 23px;
     color: white;
+}
+
+@media (max-width: 768px ) {
+   .images-container{
+       display: none;
+   }
+   
+   .background{
+       padding-top: 30px;
+        padding-bottom: 30px;
+   }
 }
