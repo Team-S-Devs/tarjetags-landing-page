@@ -8,13 +8,9 @@ const BannerHelp = () => {
           <h3>Centro de ayuda</h3>
           <h2>¿En que podemos ayudarlo?</h2>
           <div className='benefits-container'>
-            <div className='benefits'>
-              <h4>Aquí encontrará las respuestas, las funciones más valoradas y <br></br>
-              el soporte de nuestros socios, junto con acceso a instrucciones <br></br>
-              paso a paso y soporte</h4>
-              <h4></h4>
-              <h4></h4>
-            </div>
+          <div className='benefits'>
+            <h4>Aquí encontrará las respuestas, las funciones más valoradas y soporte</h4>
+          </div>
           </div>
         </div>
         <div className='images-container'>

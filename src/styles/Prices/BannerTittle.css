@@ -100,3 +100,8 @@
         padding-bottom: 30px;
    }
 }
+
+.benefits p {
+    white-space: normal;
+    color: aliceblue;
+  }
