@@ -1,51 +1,8 @@
-import React, { useState } from "react";
-import Accordion from "@mui/material/Accordion";
-import AccordionSummary from "@mui/material/AccordionSummary";
-import AccordionDetails from "@mui/material/AccordionDetails";
+import React from "react";
 import Typography from "@mui/material/Typography";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import SvgIcon from "@mui/material/SvgIcon";
-
+import BannerTittleHelp from "../components/Faq/BannerTittleHelp";
+import CustomAccordion from "../components/Faq/CustomAccordion.jsx";
 import "../styles/FAQ/Faq.css";
-
-const CustomAccordion = ({ id, ariaControls, heading, content }) => {
-  const [isExpanded, setIsExpanded] = useState(false);
-
-  return (
-    <>
-    <div className="custom-accordion">
-    <Accordion >
-      <AccordionSummary
-        expandIcon={<SvgIcon style={{ fontSize: "1.1rem" }} viewBox="0 0 36 20" >
-        <foreignObject width="100%" height="100%">
-          <svg xmlns="http://www.w3.org/2000/svg" width="36" height="20" viewBox="0 0 36 20" fill="none">
-            <path d="M2 2L17.884 17.884L33.7679 2" stroke="url(#paint0_linear_1626_2697)" stroke-width="3.97099" stroke-linecap="round" stroke-linejoin="round"/>
-            <defs>
-              <linearGradient id="paint0_linear_1626_2697" x1="17.884" y1="2" x2="17.884" y2="17.884" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#733EE8"/>
-                <stop offset="1" stop-color="#DB00FF"/>
-              </linearGradient>
-            </defs>
-          </svg>
-        </foreignObject>
-      </SvgIcon>
-    }
-        aria-controls={ariaControls}
-        id={id}
-      >
-        <Typography className="question-rectangle-date-text">{heading}</Typography>
-        {isExpanded ? (
-          <Typography>{content}</Typography>
-        ) : null}
-      </AccordionSummary>
-      <AccordionDetails>
-        <Typography>{content}</Typography>
-      </AccordionDetails>
-    </Accordion>
-    </div>
-    </>
-  );
-};
 
 const Faq = () => {
   const questions = [
@@ -79,25 +36,71 @@ const Faq = () => {
       heading: "Aqui viene la pregunta 5",
       content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.",
     },
+    {
+      id: "panel6a-header",
+      ariaControls: "panel6a-content",
+      heading: "Aqui viene la pregunta 6",
+      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.",
+    },
+    {
+      id: "panel7a-header",
+      ariaControls: "panel7a-content",
+      heading: "Aqui viene la pregunta 7",
+      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.",
+    },
+    {
+      id: "panel8a-header",
+      ariaControls: "panel8a-content",
+      heading: "Aqui viene la pregunta 8",
+      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.",
+    },
+    {
+      id: "panel9a-header",
+      ariaControls: "panel9a-content",
+      heading: "Aqui viene la pregunta 9",
+      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.",
+    },
+    {
+      id: "panel10a-header",
+      ariaControls: "panel10a-content",
+      heading: "Aqui viene la pregunta 10",
+      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.",
+    },
   ];
+
+  const halfLength = Math.ceil(questions.length / 2);
+  const firstHalf = questions.slice(0, halfLength);
+  const secondHalf = questions.slice(halfLength);
 
   return (
     <>
-    <div className="center-title" >
-        <Typography variant="h4" fontWeight="bold">FAQ</Typography>
-    </div>
-    <div className="center-container">
-      <div>
-        {questions.map((question, index) => (
-          <CustomAccordion
-            key={index}
-            id={question.id}
-            ariaControls={question.ariaControls}
-            heading={question.heading}
-            content={question.content}
-          />
-        ))}
+      <BannerTittleHelp />
+      <div className="center-title">
+        <Typography variant="h5" fontWeight="bold">Preguntas Frecuentes</Typography>
       </div>
+      <div className="center-container">
+        <div className="accordion-column">
+          {firstHalf.map((question, index) => (
+            <CustomAccordion
+              key={index}
+              id={question.id}
+              ariaControls={question.ariaControls}
+              heading={question.heading}
+              content={question.content}
+            />
+          ))}
+        </div>
+        <div className="accordion-column">
+          {secondHalf.map((question, index) => (
+            <CustomAccordion
+              key={index}
+              id={question.id}
+              ariaControls={question.ariaControls}
+              heading={question.heading}
+              content={question.content}
+            />
+          ))}
+        </div>
       </div>
     </>
   );
