@@ -1,0 +1,22 @@
+.sa-fa-banner {
+    width: 100%;
+    height: auto;
+    background-color: #0f0f0f;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color: #fff;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.sa-fa-image {
+    width: auto;
+    height: 80px;
+}
+
+.sa-fa-description {
+    text-align: center;
+    font-size: 14px;
+}

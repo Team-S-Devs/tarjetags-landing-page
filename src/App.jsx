@@ -8,6 +8,7 @@ import SignUp from "./page/SignUp"
 import LogIn from "./page/LogIn";
 import PropTypes from "prop-types";
 import { Footer } from "./components/Footer/Footer";
+import { SaFaBanner } from "./components/Footer/SaFaBanner";
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
         <Route path="/log-in" element={<LogIn />} />
       </Routes>
       <Footer />
+      <SaFaBanner />
     </BrowserRouter>
   );
 }

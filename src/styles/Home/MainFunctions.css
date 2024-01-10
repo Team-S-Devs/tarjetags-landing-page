@@ -60,3 +60,35 @@
 .right-button-m-f.disable-button-m-f {
   display: none;
 }
+
+@media (max-width: 600px) {
+  .subtitle-functions {
+    font-size: 32px;
+    margin-bottom: 0;
+  }
+
+  .left-button-m-f,
+  .right-button-m-f {
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+  }
+
+  .left-button-m-f {
+    left: 20px;
+  }
+
+  .right-button-m-f {
+    right: 20px;
+  }
+}
+
+@media (max-width: 440px) {
+  .main-functions-container {
+    margin-top: 0;
+  }
+
+  .subtitle-functions {
+    font-size: 24px;
+  }
+}

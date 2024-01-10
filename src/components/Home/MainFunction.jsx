@@ -24,7 +24,7 @@ export const MainFunction = ({ name, description, image, isLeft, currentPosition
 						name
 					}
 				</h2>
-				<p>
+				<p className='main-function-description'>
 					{
 						description
 					}
