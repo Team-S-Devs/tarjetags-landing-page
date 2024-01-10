@@ -10,7 +10,7 @@ const BoxBenefit = (props) =>{
         <div className="box-content">
             <div className="divisor-line"></div>
         {text ? (
-          <h5>{text}</h5>
+          <h4>{text}</h4>
         ) : iconType === 'true' ? (
           <BsCheckCircleFill className="icon-check" />
         ) : (

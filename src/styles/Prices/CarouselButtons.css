@@ -1,0 +1,48 @@
+
+@import url('../../global.css');
+.carousel{
+    padding-top: 35px;
+    width: 100%;
+    height: 160px;
+    display: none;
+}
+.button-carousel{
+    background:  #EDF0F7;
+}
+
+.flickity-slider{
+    height: 110px;
+}
+
+.flickity-viewport{
+    height: 110px !important;
+}
+
+.carousel-cell{
+    margin-top: 5px;
+    width: 120px;
+    height: 100px;
+    margin-right: 10px;
+    border-radius: 10px;
+    border: 2px solid white;
+    overflow: hidden; /* Asegura que el contenido no se desborde al aplicar border-radius */
+    transition: 0.5, border-color 0.3s, border-radius 0.3s; /* Agrega transiciones para suavizar los cambios */
+}
+
+.carousel-cell.is-selected {
+    /* Cambia el color del borde para la celda seleccionada */
+    margin-top: 0px;
+    border-radius: 15px; /* Ajusta el valor según la curvatura deseada para la celda seleccionada */
+    height: 110px; /* Hace que la celda seleccionada sea un poco más grande */
+  }
+
+  .carousel-cell.is-selected .button-carousel {
+    background: white;
+    }
+
+@media screen and (max-width: 958px){
+    .carousel{
+        display:block;
+    }
+}
+
