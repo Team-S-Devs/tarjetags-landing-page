@@ -187,4 +187,12 @@ line-height: normal;
     .text-benefit{
         width: 100%;
     }
+
+    .table-container{
+        gap: 0px;
+    }
+
+    .divisor-line{
+        width: 100%;
+    }
 }
