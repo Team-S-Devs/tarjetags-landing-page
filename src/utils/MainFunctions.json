@@ -1,30 +1,30 @@
 [
     {
-        "id": 0,
-        "name": "Main function",
-        "description": "Excepteur fugiat do culpa in ex sit nulla fugiat cupidatat ut culpa voluptate dolore. Mollit sint labore adipisicing duis qui ea irure proident dolore ad est ut nulla. Velit eiusmod nisi id anim in ut ea consectetur sit eu laboris aliqua officia. Cupidatat commodo sint ipsum reprehenderit sit sit aliqua elit pariatur do adipisicing.",
-        "image": "https://i.postimg.cc/x1Z70jC5/mobile.webp",
-        "isLeft": true
-    },
-    {
         "id": 1,
-        "name": "Main function",
-        "description": "Excepteur fugiat do culpa in ex sit nulla fugiat cupidatat ut culpa voluptate dolore. Mollit sint labore adipisicing duis qui ea irure proident dolore ad est ut nulla. Velit eiusmod nisi id anim in ut ea consectetur sit eu laboris aliqua officia. Cupidatat commodo sint ipsum reprehenderit sit sit aliqua elit pariatur do adipisicing.",
-        "image": "https://i.postimg.cc/x1Z70jC5/mobile.webp",
-        "isLeft": false
+        "name": "Crear Tarjetas Personalizadas",
+        "description": "Diseña tarjetas digitales únicas con facilidad. Personaliza fondos, colores y contenido para reflejar tu identidad de manera impactante.",
+        "image": "https://i.postimg.cc/44bBDdmF/image-removebg-preview-1.png",
+        "isLeft": true
     },
     {
         "id": 2,
-        "name": "Main function",
-        "description": "Excepteur fugiat do culpa in ex sit nulla fugiat cupidatat ut culpa voluptate dolore. Mollit sint labore adipisicing duis qui ea irure proident dolore ad est ut nulla. Velit eiusmod nisi id anim in ut ea consectetur sit eu laboris aliqua officia. Cupidatat commodo sint ipsum reprehenderit sit sit aliqua elit pariatur do adipisicing.",
-        "image": "https://i.postimg.cc/x1Z70jC5/mobile.webp",
-        "isLeft": true
+        "name": "Gestión Intuitiva de Contactos",
+        "description": "Organiza tus contactos de manera eficiente. Accede a funciones de edición, compartir y visualización rápida para mantener tu red actualizada sin esfuerzo.",
+        "image": "https://i.postimg.cc/44bBDdmF/image-removebg-preview-1.png",
+        "isLeft": false
     },
     {
         "id": 3,
-        "name": "Main function",
-        "description": "Excepteur fugiat do culpa in ex sit nulla fugiat cupidatat ut culpa voluptate dolore. Mollit sint labore adipisicing duis qui ea irure proident dolore ad est ut nulla. Velit eiusmod nisi id anim in ut ea consectetur sit eu laboris aliqua officia. Cupidatat commodo sint ipsum reprehenderit sit sit aliqua elit pariatur do adipisicing.",
-        "image": "https://i.postimg.cc/x1Z70jC5/mobile.webp",
+        "name": "Optimización SEO Integrada",
+        "description": "Aumenta la visibilidad de tus tarjetas en los motores de búsqueda. Nuestra aplicación incluye herramientas SEO para destacar tu perfil y atraer nuevas oportunidades.",
+        "image": "https://i.postimg.cc/44bBDdmF/image-removebg-preview-1.png",
+        "isLeft": true
+    },
+    {
+        "id": 4,
+        "name": "Interfaz Responsiva y Atractiva",
+        "description": "Experimenta una interfaz fácil de usar y totalmente adaptable. Ya sea en tu computadora o dispositivo móvil, disfruta de una experiencia de usuario fluida en cualquier lugar.",
+        "image": "https://i.postimg.cc/44bBDdmF/image-removebg-preview-1.png",
         "isLeft": false
     }
 ]
