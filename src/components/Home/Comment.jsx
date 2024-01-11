@@ -18,7 +18,7 @@ export const Comment = ({id, image, comment, currentPosition}) => {
 
     return (
         <div className={`comment-container ${position}`}>
-            <img src={image} alt="Profile image" className="profile-image-section" draggable={false} />
+            <img src={image} alt="Profile img" className="profile-image-section" draggable={false} />
             <p className="comment-section">
                 {
                     comment

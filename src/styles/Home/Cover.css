@@ -3,7 +3,7 @@
 .cover-container {
   display: grid;
   height: calc(100vh - 80px);
-  max-width: 1920px;
+  width: 100%;
   max-height: calc(100vh - 80px);
   padding: 40px 80px;
   grid-template-columns: 50% 50%;
