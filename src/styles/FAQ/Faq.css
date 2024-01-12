@@ -79,7 +79,7 @@
 }
 
 .center-container.expanded {
-  align-items: flex-start; /* Alinear al principio cuando está expandido */
+  align-items: flex-start; 
 }
 
 @media (max-width: 740px) {
