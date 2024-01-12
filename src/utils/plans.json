@@ -1,0 +1,82 @@
+[
+    {
+        "idPlan": 1,
+        "namePlan":"Gratis",
+        "pricePlan": 0,
+        "renovacion": "Solo 3 meses",
+        "libreDePublicidad": false,
+        "nombreDominio": false,
+        "servicioTiendaMax":3,
+        "botonesAdicionales": ["Ninguno"],
+        "clasificacionDeProductos":  false,
+        "comisionDeVenta": 0,
+        "descuentoPases": 0
+    },
+    {
+        "idPlan": 2,
+        "namePlan":"Basico",
+        "pricePlan": 100,
+        "renovacion": "Trimestral",
+        "libreDePublicidad": true,
+        "nombreDominio": true,
+        "servicioTiendaMax":5,
+        "botonesAdicionales": ["Whatsapp","TikTok"],
+        "clasificacionDeProductos":  false,
+        "comisionDeVenta": 0,
+        "descuentoPases": 0
+    },
+    {
+        "idPlan": 3,
+        "namePlan":"Standard",
+        "pricePlan": 300,
+        "renovacion": "Semestral",
+        "libreDePublicidad": true,
+        "nombreDominio": true,
+        "servicioTiendaMax":10,
+        "botonesAdicionales": ["Whatsapp","TikTok","Linkedin","Maps"],
+        "clasificacionDeProductos":  false,
+        "comisionDeVenta": 0,
+        "descuentoPases": 0
+    },
+    {
+        "idPlan": 4,
+        "namePlan":"Premium",
+        "pricePlan": 500,
+        "renovacion": "Anual",
+        "libreDePublicidad": true,
+        "nombreDominio": true,
+        "servicioTiendaMax":20,
+        "botonesAdicionales": ["Ilimitado"],
+        "clasificacionDeProductos":  true,
+        "comisionDeVenta": 0,
+        "descuentoPases": 0
+    },
+
+    {
+        "idPlan": 5,
+        "namePlan":"Partner",
+        "pricePlan": 1500,
+        "renovacion": "Semestral",
+        "libreDePublicidad": true,
+        "nombreDominio": true,
+        "servicioTiendaMax":20,
+        "botonesAdicionales": ["Ilimitado"],
+        "clasificacionDeProductos":  true,
+        "comisionDeVenta": 20,
+        "descuentoPases": 10
+    },
+
+    {
+        "idPlan": 6,
+        "namePlan":"Master",
+        "pricePlan": 3500,
+        "renovacion": "Anual",
+        "libreDePublicidad": true,
+        "nombreDominio": true,
+        "servicioTiendaMax":20,
+        "botonesAdicionales": ["Ilimitado"],
+        "clasificacionDeProductos":  true,
+        "comisionDeVenta": 30,
+        "descuentoPases": 20
+    }
+]

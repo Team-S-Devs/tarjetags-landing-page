@@ -7,6 +7,8 @@ import { useRef, useEffect, useState} from 'react';
 import 'flickity/css/flickity.css';
 import ButtonTableComparison from './ButtonTableComparison';
 import '../../styles/Prices/CarouselButtons.css';
+import plans from "../../utils/plans.json";
+import ButtonCardPrice from './ButtonCardPrice';
 
 function TableComparePlans() {
     const carouselRef = useRef(null);
@@ -22,11 +24,12 @@ function TableComparePlans() {
       autoplay: true,
       prevNextButtons: false,
       initialIndex: 2,
+      pageDots: true,
     });
     flickityInstance.current.resize();
 
     const handleResize = () => {
-      if (window.innerWidth >= 958) {
+      if (window.innerWidth > 958) {
         setDisplayCells(Array(6).fill(true));
         cellsReseted = false;
       } else {
@@ -38,18 +41,24 @@ function TableComparePlans() {
       }
     };
 
+
+    
+
     window.addEventListener('resize', handleResize);
     
+    if(window.innerWidth > 958){
+      setDisplayCells(Array(6).fill(true));
+    }
+
     return () => {
       flickityInstance.current.destroy();
       window.removeEventListener('resize', handleResize);
     };
   }, []); 
 
-
-
+  
   const handleCellClick = (index) => {
-    console.log(index);
+    
     flickityInstance.current.select(index);
     setDisplayCells(
       (prevCells) => {
@@ -60,39 +69,47 @@ function TableComparePlans() {
 
   };
 
-  
+  const getTitlePlanById = (idPlan) => {
+    const currentPlan = plans.find((plan) => plan.idPlan == idPlan);
+    return currentPlan.namePlan;
+  }
+
+  const getAmountById = (idPlan) => {
+    const currentPlan = plans.find((plan) => plan.idPlan == idPlan);
+    return currentPlan.pricePlan;
+  }
 
   return (
     <div className='TableCompare-container'>
         <h2 className='tittle-text-table'>ELIGE EL PLAN QUE MAS SE ADAPTE A TUS NECESIDADES</h2>
         <div className='carousel' ref={carouselRef}>
             <div className='carousel-cell' onClick={()=> handleCellClick(0)}>
-                <ButtonTableComparison title='1' currency='Bs' amount='100'/>
+                <ButtonTableComparison title={getTitlePlanById(1)} currency='Bs' amount={getAmountById(1)}/>
             </div>
             <div className='carousel-cell' onClick={()=> handleCellClick(1)}>
-                <ButtonTableComparison title='2' currency='Bs' amount='100'/>
+                <ButtonTableComparison title={getTitlePlanById(2)} currency='Bs' amount={getAmountById(2)}/>
             </div>
             <div className='carousel-cell' onClick={()=> handleCellClick(2)}>
-                <ButtonTableComparison title='3' currency='Bs' amount='100'/>
+                <ButtonTableComparison title={getTitlePlanById(3)} currency='Bs' amount={getAmountById(3)}/>
             </div>
             <div className='carousel-cell' onClick={()=> handleCellClick(3)}>
-                <ButtonTableComparison title='4' currency='Bs' amount='100'/>
+                <ButtonTableComparison title={getTitlePlanById(4)} currency='Bs' amount={getAmountById(4)}/>
             </div>
             <div className='carousel-cell' onClick={()=> handleCellClick(4)}>
-                <ButtonTableComparison title='5' currency='Bs' amount='100'/>
+                <ButtonTableComparison title={getTitlePlanById(5)} currency='Bs' amount={getAmountById(5)}/>
             </div>
             <div className='carousel-cell' onClick={()=> handleCellClick(5)}>
-                <ButtonTableComparison title='6' currency='Bs' amount='100'/>
+                <ButtonTableComparison title={getTitlePlanById(6)} currency='Bs' amount={getAmountById(6)}/>
             </div>
         </div>
         <div className='table-container'>
           <ColumnTextBenefit/>
-          {displayCells[0]? (<ColumPrice title='Basico' currency='Bs' amount='200'/>) : null}
-          {displayCells[1]? (<ColumPrice title='Intermedio' currency='Bs' amount='200'/>) : null}
-          {displayCells[2]? (<ColumPrice title='Avanzado' currency='Bs' amount='200'/>) : null}
-          {displayCells[3]? (<ColumPrice title='pro' currency='Bs' amount='200'/>) : null}
-          {displayCells[4]? (<ColumPrice title='Master' currency='Bs' amount='200'/>) : null}
-          {displayCells[5]? (<ColumPrice title='Thanos' currency='Bs' amount='200'/>) : null}
+          {displayCells[0]? (<ColumPrice idPlan='1'/>) : null}
+          {displayCells[1]? (<ColumPrice idPlan='2'/>) : null}
+          {displayCells[2]? (<ColumPrice idPlan='3'/>) : null}
+          {displayCells[3]? (<ColumPrice idPlan='4'/>) : null}
+          {displayCells[4]? (<ColumPrice idPlan='5'/>) : null}
+          {displayCells[5]? (<ColumPrice idPlan='6'/>) : null}
         </div>
     </div>
   )
