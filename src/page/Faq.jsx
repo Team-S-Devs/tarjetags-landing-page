@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Typography from "@mui/material/Typography";
 import BannerTittleHelp from "../components/Faq/BannerTittleHelp";
 import CustomAccordion from "../components/Faq/CustomAccordion.jsx";
@@ -9,6 +9,11 @@ const Faq = () => {
   const halfLength = Math.ceil(questions.length / 2);
   const firstHalf = questions.slice(0, halfLength);
   const secondHalf = questions.slice(halfLength);
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const handleExpand = () => {
+    setIsExpanded(!isExpanded);
+  };
 
   return (
     <>
@@ -16,7 +21,7 @@ const Faq = () => {
       <div className="center-title">
         <Typography variant="h5" fontWeight="bold">Preguntas Frecuentes</Typography>
       </div>
-      <div className="center-container">
+      <div className={`center-container ${isExpanded ? 'expanded' : ''}`}>
         <div className="accordion-column">
           {firstHalf.map((question, index) => (
             <CustomAccordion
@@ -25,6 +30,7 @@ const Faq = () => {
               ariaControls={question.ariaControls}
               heading={question.heading}
               content={question.content}
+              onExpand={handleExpand}
             />
           ))}
         </div>
@@ -36,6 +42,7 @@ const Faq = () => {
               ariaControls={question.ariaControls}
               heading={question.heading}
               content={question.content}
+              onExpand={handleExpand}
             />
           ))}
         </div>
