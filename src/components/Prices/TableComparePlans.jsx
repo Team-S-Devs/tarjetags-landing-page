@@ -41,7 +41,13 @@ function TableComparePlans() {
       }
     };
 
+    const handleSlideChange = (index) => {
+     
+      handleCellClick(index);
+    };
 
+    flickityInstance.current.on('change', handleSlideChange);
+    
     
 
     window.addEventListener('resize', handleResize);
