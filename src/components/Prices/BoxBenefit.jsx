@@ -10,7 +10,6 @@ const BoxBenefit = (props) =>{
     const listButtons = props.listButtons;
 
     const getIconOfButton = (nameButton) => {
-       console.log(nameButton, ' :nameButton');
         if(nameButton === "Whatsapp"){
           return (<WhatsappIcon/>);
         }else if( nameButton === "TikTok"){
@@ -30,7 +29,6 @@ const BoxBenefit = (props) =>{
     }
 
     const blockButtons = () => {
-      console.log(listButtons, ' :listButtons');
       return (
         <div className="icons-container">
          {listButtons.map((element, index) => (
