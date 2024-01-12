@@ -1,39 +1,45 @@
 import React from "react";
 import "../../styles/Prices/CardPrice.css"
 import { BsCheckCircleFill } from "react-icons/bs";
+import { TbPointFilled } from "react-icons/tb";
 import ButtonCardPrice from "./ButtonCardPrice";
+import plans from "../../utils/plans.json";
 
-const CardPrice = (props) => {
+const CardPrice = (idPlan) => {
+  const currentPlan = plans.find((plan) => plan.idPlan === idPlan.idPlan);
+  
+  const blockDescription = () => {
+    if (currentPlan.descripcion.length > 0) {
+      return(
+        <div className="benefits-price">
+          {currentPlan.descripcion.map((benefit) => {
+            return(
+              <div className="benefit-price">
+                <BsCheckCircleFill className="icon"/>
+                <h6 className="text-benefit">{benefit}</h6>
+              </div>
+            );
+          })}
+        </div>
+      );
+    }
+  }
+
     return(
       <div className="card-price-container">
          
          <h2 className="card-tittle">
-            {props.tittle.toUpperCase()}
+            {currentPlan.namePlan.toUpperCase()}
          </h2>
           <div className="card-price">
             <div className="ribbon left">
-            <span>{props.price} {props.currency}</span>
+              <div className="price-content-text">
+                <span>{currentPlan.pricePlan} {currentPlan.currency}</span>
+              </div>
             </div>
           </div>
 
-          <div className="benefits-price">
-              <div className="benefit-price">
-                <BsCheckCircleFill className="icon"/>
-                <h4 className="text-benefit">Beneficio</h4>
-              </div>
-              <div className="benefit-price">
-                <BsCheckCircleFill className="icon"/>
-                <h4 className="text-benefit">Beneficio</h4>
-              </div>
-              <div className="benefit-price">
-                <BsCheckCircleFill className="icon"/>
-                <h4 className="text-benefit">Lore</h4>
-              </div>
-              <div className="benefit-price">
-                <BsCheckCircleFill className="icon"/>
-                <h4 className="text-benefit">Beneficio</h4>
-              </div>
-          </div>
+         {blockDescription()}
           <div className="button-container">
             {/*<button className="btn-price">
               <span className="text-button-price">

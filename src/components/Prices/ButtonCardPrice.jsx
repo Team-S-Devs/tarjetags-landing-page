@@ -2,7 +2,10 @@ import React from 'react';
 import '../../styles/Prices/CardPrice.css';
 import { Button, Typography } from "@mui/material";
 import { useState } from 'react';
-const ButtonCardPrice = () => {
+const ButtonCardPrice = (props) => {
+
+    const width = props.width;
+    const height = props.height;
 
     const [isHovered, setIsHovered] = useState(false);
     const message = "Adquirir"
@@ -18,15 +21,15 @@ const ButtonCardPrice = () => {
     return (  
      <Button variant="outlined" 
         sx={{
-        width: "100%",
-        height: "48px",
+        width: width ? `${width}px` : "100%",
+        height: height ? `${height}px` : "100%",
         borderRadius: "100px",
         border: "1px solid #733EE8",
         background: "rgba(255, 255, 255, 0.00)",
         transition: "opacity 2.5s",
 
         ":hover":{
-            background: "linear-gradient(90deg, #733EE8 0%, #DB00FF 100%)",
+          background: "linear-gradient(90deg, #733EE8 0%, #DB00FF 100%)",
         },
         }}
         onMouseEnter={handleMouseEnter}
