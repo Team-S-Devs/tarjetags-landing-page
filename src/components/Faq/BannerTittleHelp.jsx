@@ -14,7 +14,7 @@ const BannerHelp = () => {
           </div>
         </div>
         <div className='images-container'>
-        <img src="https://i.postimg.cc/FFkqrfd6/Untitled-1-1920x979.png" alt="img-plans" className="img-plans" draggable="false"></img>
+        <img src="https://i.postimg.cc/4x45fzPv/soporte-tecnico.png" alt="img-plans" className="img-plans" draggable="false"></img>
         </div>
     </div>
   );
