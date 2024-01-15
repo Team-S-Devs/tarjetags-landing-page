@@ -21,25 +21,25 @@
         "id": "panel4a-header",
         "ariaControls": "panel4a-content",
         "heading": "¿Cómo funciona el descuento de pases?",
-        "content": "El descuento de pases opera mediante."
+        "content": "El descuento de pases opera mediante tarjetas físicas relacionadas con tu tarjeta digital, ofreciendo beneficios especiales."
     },
     {
         "id": "panel5a-header",
         "ariaControls": "panel5a-content",
-        "heading": "¿Cómo funciona la comisión de ventas?",
-        "content": "La comisión de ventas se estructura de acuerdo con."
+        "heading": "¿Puedo tener 2 planes al mismo tiempo?",
+        "content": "No, al ocupar un plan obtienes todos sus beneficios. Al finalizarlo, puedes elegir otro plan con diferentes o mejores beneficios."
     },
     {
         "id": "panel6a-header",
         "ariaControls": "panel6a-content",
         "heading": "¿Qué es la clasificación de producto?",
-        "content": "La clasificación de producto se define por."
+        "content": "La clasificación de producto se define con diferentes categorias dentro de la tarjeta digital, proporcionando asi una estructura organizada."
     },
     {
         "id": "panel7a-header",
         "ariaControls": "panel7a-content",
         "heading": "¿A qué nos referimos con el servicio Tienda Max?",
-        "content": "El servicio Tienda Max se caracteriza por ."
+        "content": "El servicio Tienda Max destaca por ofrecer todos los servicios al máximo que tu tarjeta de presentación puede brindar."
     },
     {
         "id": "panel8a-header",
