@@ -2,61 +2,61 @@
     {
         "id": "panel1a-header",
         "ariaControls": "panel1a-content",
-        "heading": "Aqui viene la pregunta",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget."
+        "heading": "¿Qué es una tarjeta de presentación digital?",
+        "content": "Una tarjeta de presentación digital es una versión electrónica de la clásica tarjeta de presentación impresa. Se utiliza para compartir información de contacto y detalles profesionales de manera digital."
     },
     {
         "id": "panel2a-header",
         "ariaControls": "panel2a-content",
-        "heading": "Aqui viene la pregunta 2",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget."
+        "heading": "¿A qué nos referimos con Forma de contacto?",
+        "content": "Hace referencia a números de teléfono, direcciones de correo electrónico y otros métodos de contacto. Esto permite que las personas se comuniquen contigo en diversas situaciones."
     },
     {
         "id": "panel3a-header",
         "ariaControls": "panel3a-content",
-        "heading": "Aqui viene la pregunta 3",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget."
+        "heading": "¿A qué nos referimos con Botones?",
+        "content": "Se refiere a las redes sociales existentes. Conectar tu perfil de redes sociales a tu tarjeta de presentación digital facilita que las personas te encuentren en línea de manera eficiente."
     },
     {
         "id": "panel4a-header",
         "ariaControls": "panel4a-content",
-        "heading": "Aqui viene la pregunta 4",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget."
+        "heading": "¿Cómo funciona el descuento de pases?",
+        "content": "El descuento de pases opera mediante tarjetas físicas relacionadas con tu tarjeta digital, ofreciendo beneficios especiales."
     },
     {
         "id": "panel5a-header",
         "ariaControls": "panel5a-content",
-        "heading": "Aqui viene la pregunta 5",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget."
+        "heading": "¿Puedo tener 2 planes al mismo tiempo?",
+        "content": "No, al ocupar un plan obtienes todos sus beneficios. Al finalizarlo, puedes elegir otro plan con diferentes o mejores beneficios."
     },
     {
         "id": "panel6a-header",
         "ariaControls": "panel6a-content",
-        "heading": "Aqui viene la pregunta 6",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget."
+        "heading": "¿Qué es la clasificación de producto?",
+        "content": "La clasificación de producto se define con diferentes categorias dentro de la tarjeta digital, proporcionando asi una estructura organizada."
     },
     {
         "id": "panel7a-header",
         "ariaControls": "panel7a-content",
-        "heading": "Aqui viene la pregunta 7",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget."
+        "heading": "¿A qué nos referimos con el servicio Tienda Max?",
+        "content": "El servicio Tienda Max destaca por ofrecer todos los servicios al máximo que tu tarjeta de presentación puede brindar."
     },
     {
         "id": "panel8a-header",
         "ariaControls": "panel8a-content",
-        "heading": "Aqui viene la pregunta 8",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget."
+        "heading": "¿A qué nos referimos con Dominio personalizado?",
+        "content": "Se trata de un nombre único que se muestra después de www. en las direcciones web. Esto resulta en una dirección web personalizada, como www.tarjetag.com/."
     },
     {
         "id": "panel9a-header",
         "ariaControls": "panel9a-content",
-        "heading": "Aqui viene la pregunta 9",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget."
+        "heading": "¿Para qué sirven los servicios en una tarjeta digital?",
+        "content": "Los servicios en una tarjeta digital tienen como finalidad gestionar tus productos. Puedes agregar, editar y gestionar tus servicios para su venta. Además, según el plan elegido, puedes incorporar botones adicionales."
     },
     {
         "id": "panel10a-header",
         "ariaControls": "panel10a-content",
-        "heading": "Aqui viene la pregunta 10",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget."
+        "heading": "¿Para qué sirve la sección de Elementos?",
+        "content": "La sección de Elementos desempeña un papel crucial en la formación de la tarjeta de presentación. Permite la inclusión de información del usuario, como nombre, descripción, foto de perfil o logotipo, foto de fondo y un diseño personalizado. Las opciones de fondo claro, fondo oscuro y la selección de un color principal ofrecen flexibilidad en la personalización."
     }
 ]
