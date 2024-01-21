@@ -1,0 +1,22 @@
+.funcionality-page {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .parallax-section {
+    flex: 1; /* Ocupa todo el espacio disponible en la primera sección */
+    padding: 20px; /* Ajusta según sea necesario */
+  }
+  
+  .title-section {
+    flex: 1; /* Ocupa todo el espacio disponible en la segunda sección */
+    padding: 20px; /* Ajusta según sea necesario */
+    background-color: #f0f0f0; /* Color de fondo opcional */
+  }
+  
+  .title-section h2 {
+    margin-bottom: 10px; /* Ajusta según sea necesario */
+  }
+  
+  /* Otros estilos según sea necesario */
+  

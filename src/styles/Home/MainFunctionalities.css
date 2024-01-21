@@ -1,0 +1,21 @@
+.parallax-tilt-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 80px 100px 30px;
+}
+
+.centered-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.centered-image {
+    width: 267px; /* Ancho fijo */
+    height: 503px; /* Altura fija */
+    object-fit: cover; /* Ajusta el comportamiento del recorte */
+    /* Otros estilos de la imagen según sea necesario */
+}
+

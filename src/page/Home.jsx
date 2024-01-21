@@ -1,6 +1,7 @@
 import { Comments } from "../components/Home/Comments";
 import Cover from "../components/Home/Cover";
 import MainFunctions from "../components/Home/MainFunctions";
+import FuncionalityPage from "../components/Home/fun";
 import "../styles/Home/Home.css";
 
 const Home = () => {
@@ -9,7 +10,11 @@ const Home = () => {
     <>
       <div className="home-page">
         <Cover />
-        <MainFunctions />
+        <div>
+
+        </div>
+        <FuncionalityPage />
+        
         <div className="customize-container">
           <div className="customize-description-container">
             <h3 className="customize-title">PERSONALIZACIÓN</h3>
