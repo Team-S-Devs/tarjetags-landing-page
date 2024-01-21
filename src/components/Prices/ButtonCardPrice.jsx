@@ -56,17 +56,17 @@ const ButtonCardPrice = (props) => {
          ( 
          <Typography variant="h5" className="text-button-price-card"
             sx={{
-            "text-align": "center",
-            "font-family": "Poppins",
-            "font-size": "32px",
-            "font-style": "normal",
-            "font-weight": 400,
-            "line-height": "normal",
+            textAlign: "center",
+            fontFamily: "Poppins",
+            fontSize: "32px",
+            fontStyle: "normal",
+            fontWeight: 400,
+            lineHeight: "normal",
             background: "linear-gradient(90deg, #733EE8 0%, #DB00FF 100%)",
-            "background-clip": "text",
-            "-webkit-background-clip": "text",
-            "-webkit-text-fill-color": "transparent",
-            "text-transform": "capitalize"
+            backgroundClip: "text",
+            WebkitBackgroundClip: "text",
+            WebkitTextFillColor: "transparent",
+            textTransform: "capitalize"
             }}> 
             {message}
         </Typography>)}

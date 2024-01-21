@@ -12,9 +12,9 @@ const CardPrice = (idPlan) => {
     if (currentPlan.descripcion.length > 0) {
       return(
         <div className="benefits-price">
-          {currentPlan.descripcion.map((benefit) => {
+          {currentPlan.descripcion.map((benefit, index) => {
             return(
-              <div className="benefit-price">
+              <div key={index} className="benefit-price">
                 <BsCheckCircleFill className="icon"/>
                 <h6 className="text-benefit">{benefit}</h6>
               </div>
