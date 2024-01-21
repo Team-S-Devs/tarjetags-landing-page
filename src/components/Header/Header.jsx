@@ -24,7 +24,8 @@ const Header = ({ currentlyPage, isLoggedTheUser }) => {
   }, []);
 
   return (
-    <header className={`header ${scrolled ? 'fix-header' : ''} container`}>
+    <header className={`header ${scrolled ? 'fix-header' : ''}`}>
+      <div className="container header">
       <img src="" alt="Logo tarjetags" className="logo-tarjetags" />
 
       <nav className={` menu ${isOpen ? "active" : ""} `}>
@@ -87,6 +88,7 @@ const Header = ({ currentlyPage, isLoggedTheUser }) => {
         <span className={` menu-button-line ${isOpen ? "active" : ""} `}></span>
         <span className={` menu-button-line ${isOpen ? "active" : ""} `}></span>
       </button>
+      </div>
     </header>
   );
 };

@@ -6,6 +6,13 @@
 }
 
 .container {
-    max-width: 1140px;
-    margin: auto;
+    max-width: 1140px !important;
+    margin: auto !important;
+}
+
+@media screen and (max-width: 1140px) {
+    .container {
+        margin-right: 32px !important;
+        margin-left: 32px !important;
+    }
 }

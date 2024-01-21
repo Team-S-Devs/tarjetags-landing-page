@@ -44,6 +44,38 @@
   overflow-x: hidden;
 }
 
+
+
+.home-page h1{
+  font-size: 47.78px;
+}
+
+.home-page h2{
+  font-size: 39.81px;
+}
+
+.home-page h3{
+  font-size: 33.18px;
+}
+
+.home-page h4{
+  font-size: 27.65px;
+}
+
+.home-page h5{
+  font-size: 23.04px;
+}
+
+.home-page h6{
+  font-size: 19.20px;
+}
+
+.home-page p{
+  font-size: 16px;
+}
+
+
+
 @media (max-width: 1270px) {
   .designs-image {
     width: 400px;
