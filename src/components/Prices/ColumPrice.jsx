@@ -7,7 +7,7 @@ import plans from "../../utils/plans.json";
 const ColumPrice = ({idPlan }) => {
   const display = true;
   const currentPlan = plans.find((plan) => plan.idPlan == idPlan);
-  console.log(currentPlan);
+  
 
   return display ? (
     <div className={`column-price`}>

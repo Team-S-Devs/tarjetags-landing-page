@@ -9,15 +9,15 @@ const BoxBenefit = (props) =>{
     const iconType = props.iconType;
     const listButtons = props.listButtons;
 
-    const getIconOfButton = (nameButton) => {
+    const getIconOfButton = (nameButton, key) => {
         if(nameButton === "Whatsapp"){
-          return (<WhatsappIcon/>);
+          return (<WhatsappIcon key={key}/>);
         }else if( nameButton === "TikTok"){
-          return(<TikTokIcon/>);
+          return(<TikTokIcon key={key}/>);
         }else if (nameButton === "Linkedin"){
-          return(<LinkedinIcon/>);
+          return(<LinkedinIcon key={key}/>);
         }else if (nameButton === "Maps"){
-          return(<LocationIcon/>);
+          return(<LocationIcon key={key}/>);
         } else if(nameButton === "Ninguno"){
           return <h4>Ninguno</h4>;
         } else if(nameButton === "Ilimitado"){
@@ -32,7 +32,7 @@ const BoxBenefit = (props) =>{
       return (
         <div className="icons-container">
          {listButtons.map((element, index) => (
-          getIconOfButton(element)
+          getIconOfButton(element, index)
         ))}
         </div>
       );
