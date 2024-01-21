@@ -15,7 +15,7 @@
 .card-price-container .card-tittle{
     font-family: var(--font-family-general);
     padding-top: 19px;
-    color: #733EE8;
+    color: black;
     font-style: normal;
     font-weight: 900;
     line-height: normal; 
@@ -270,12 +270,10 @@
         margin-right: 20px;
         margin-left: 20px;
     }
-
-    
-
     .price-content-text {
         width: 100%;
     }
+
 }
 
 @media screen and (max-width: 479px){

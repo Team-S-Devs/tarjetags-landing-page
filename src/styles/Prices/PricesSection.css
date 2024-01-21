@@ -36,6 +36,11 @@
 }
 
 @media screen and (max-width: 904px){
+    .price-container {
+        padding-top: 32px ;
+        padding-bottom: 32px;
+    }
+
     .cards-container{
         padding-left: 32px;
         padding-right: 32px;
@@ -64,5 +69,11 @@
         padding-bottom: 8px;
         padding-top: 8px;
     }
+
+    .price-container {
+        padding-top: 16px ;
+        padding-bottom: 16px;
+    }
+
     
 }
