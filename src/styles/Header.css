@@ -23,7 +23,7 @@
 
 .menu {
   width: 600px;
-  height: 100%;
+  height: auto;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -230,6 +230,7 @@
 
   .menu.active {
     display: block;
+    height: auto;
   }
 
   .menu-option {
