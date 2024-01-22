@@ -1,3 +1,4 @@
+import Advantages from "../components/Home/Advantages";
 import { Comments } from "../components/Home/Comments";
 import Cover from "../components/Home/Cover";
 import MainFunctions from "../components/Home/MainFunctions";
@@ -11,6 +12,7 @@ const Home = () => {
       <div className="home-page">
         <Cover />
         <TimeLineSteps />
+        <Advantages />
       </div>
     </>
   );
