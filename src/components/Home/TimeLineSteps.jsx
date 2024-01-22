@@ -5,6 +5,7 @@ import { BsPerson } from "react-icons/bs";
 import { BsPencilSquare } from "react-icons/bs";
 import { BsShop } from "react-icons/bs";
 import { BsShare } from "react-icons/bs";
+import StartButton from "./StartButton";
 
 const TimeLineSteps = () => {
     return (
@@ -61,6 +62,9 @@ const TimeLineSteps = () => {
                             </p>
                         </div>
                     </div>  
+                </div>
+                <div className="button-container-t">
+                    <StartButton />
                 </div>
             </div>
         </div >

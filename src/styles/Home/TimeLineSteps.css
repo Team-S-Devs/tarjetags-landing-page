@@ -99,6 +99,18 @@
     margin-bottom: 10px;
 }
 
+.button-container-t{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    max-width: 1140px;
+    margin-top: 15px;
+    
+
+}
+
 
 
 @media screen and (max-width: 1327px){
