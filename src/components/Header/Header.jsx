@@ -25,6 +25,7 @@ const Header = ({ currentlyPage, isLoggedTheUser }) => {
 
   return (
     <header className={`header ${scrolled ? 'fix-header' : ''}`}>
+      <div className="container header">
       <img src="" alt="Logo tarjetags" className="logo-tarjetags" />
 
       <nav className={` menu ${isOpen ? "active" : ""} `}>
@@ -46,12 +47,13 @@ const Header = ({ currentlyPage, isLoggedTheUser }) => {
         >
           Faq
         </a>
+
+        
       </nav>
 
-      <div
-        className={` sign-container ${!isLoggedTheUser ? "active" : ""} ${
+      <div className={` sign-container ${!isLoggedTheUser ? "active" : ""} ${
           isOpen ? "open" : "" } `}
-      >
+        >
         <div className="options-sign-container">
           <a href="/log-in" className="sign-option">
             Iniciar sesión
@@ -86,6 +88,7 @@ const Header = ({ currentlyPage, isLoggedTheUser }) => {
         <span className={` menu-button-line ${isOpen ? "active" : ""} `}></span>
         <span className={` menu-button-line ${isOpen ? "active" : ""} `}></span>
       </button>
+      </div>
     </header>
   );
 };
