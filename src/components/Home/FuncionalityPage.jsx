@@ -1,5 +1,5 @@
 import React from 'react';
-import ParallaxCard from "../../components/Home/MainFunctionalities";
+import ParallaxCard from "./MainFunctionalities";
 import "../../styles/Home/fun.css";
 import StartButton from "./StartButton";
 
