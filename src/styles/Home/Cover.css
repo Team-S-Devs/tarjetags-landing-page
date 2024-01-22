@@ -1,14 +1,25 @@
 @import url("../../global.css");
 
-.cover-container {
+.cover-container-background {
   display: grid;
   height: calc(100vh - 80px);
   width: 100%;
   max-height: calc(100vh - 80px);
   padding: 40px 80px;
-  grid-template-columns: 50% 50%;
+  
   background: var(--background-gradient);
   color: #fff;
+}
+
+.cover-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 1400px;
 }
 
 .spline-cover-one {
@@ -40,6 +51,14 @@
 .slogan-cover {
   font-family: var(--font-family-title);
   font-size: 4vw;
+  margin-bottom: 10px;
+}
+
+.slogan-cover .main-word {
+  font-size: 4vw;
+  background: linear-gradient(90deg, #F2A5FF 0%, #B800EB 20%, #733EE8 37.5%, #561AD9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .paragraph-slogan-cover {
@@ -66,7 +85,7 @@
 }
 
 @media (max-width: 870px) {
-  .cover-container {
+  .cover-container-background {
     display: flex;
     flex-direction: column;
     align-items: center;
