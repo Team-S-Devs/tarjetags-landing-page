@@ -1,6 +1,8 @@
 import React from 'react';
 import ParallaxCard from "../../components/Home/MainFunctionalities";
 import "../../styles/Home/fun.css";
+import StartButton from "./StartButton";
+
 
 const FuncionalitySection = ({ title, imgSrc, altText, description }) => {
     return (
@@ -12,7 +14,7 @@ const FuncionalitySection = ({ title, imgSrc, altText, description }) => {
                 </div>
             </div>
             <div className='text-section'>
-                <h4 className='title-text'>{title}</h4>
+                <h6 className='title-text'>{title}</h6>
                 <div className='subtext-text'>{description}</div>
             </div>
         </div>
@@ -28,7 +30,7 @@ const FuncionalityPage = () => {
                     <ParallaxCard />
                 </div>
                 <div className="title-section">
-                    <h2>Funcionalidades Principales</h2>
+                    <h3>Funcionalidades Principales</h3>
                     <FuncionalitySection
                         title="Potencia tus servicios"
                         imgSrc="https://i.ibb.co/n80LSTF/trending-up.png"
@@ -53,6 +55,9 @@ const FuncionalityPage = () => {
                         altText="icon grid add"
                         description="Amplía tu oferta con más servicios y categorías. Puedes añadir múltiples redes sociales."
                     />
+                    <div className="button-container-t">
+                    <StartButton />
+                </div>
                 </div>
             </div>
         </div>
