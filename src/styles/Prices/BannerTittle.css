@@ -117,15 +117,27 @@
     height: 100%;
 }
 
+@media screen and (max-width: 904px){
+    .background{
+        padding: 32px;
+    }
+}
+
 @media (max-width: 768px ) {
    .images-container{
        display: none;
    }
-   
-   .background{
-       padding-top: 30px;
-        padding-bottom: 30px;
-   }
+}
+
+@media screen and (max-width: 599px){
+    .background{
+        padding: 16px;
+    }
+
+    .benefits-container{
+        padding: 0px;
+    }
+    
 }
 
 .benefits p {
