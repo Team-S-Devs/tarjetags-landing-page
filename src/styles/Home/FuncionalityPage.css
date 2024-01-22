@@ -1,6 +1,7 @@
 .funcionality-page {
     display: flex;
-    padding: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     flex-direction: row;
     justify-content: center;
     align-items: center;
