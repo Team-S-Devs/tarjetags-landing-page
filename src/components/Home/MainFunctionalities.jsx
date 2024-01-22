@@ -8,11 +8,10 @@ const MainFunctionalities = () => {
             <ParallaxTilt
                 scale={1.2}
                 transitionSpeed={1500}
-                tiltMaxAngleX={15} //no tocar
+                tiltMaxAngleX={15}
                 tiltMaxAngleY={15}
             >
                 <div className="centered-content">
-                    {/* Contenido adicional si es necesario */}
                     <img
                         src="https://marea-alcalina-resources.s3.amazonaws.com/landing_catalog_mockup_image_4.webp"
                         alt="Centrado con perspectiva"

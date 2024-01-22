@@ -2,7 +2,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 100px 80px 100px 30px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .centered-content {
@@ -13,9 +14,8 @@
 }
 
 .centered-image {
-    width: 267px; /* Ancho fijo */
-    height: 503px; /* Altura fija */
-    object-fit: cover; /* Ajusta el comportamiento del recorte */
-    /* Otros estilos de la imagen según sea necesario */
+    width: 267px;
+    height: 503px;
+    object-fit: cover; 
 }
 
