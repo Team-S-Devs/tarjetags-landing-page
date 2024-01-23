@@ -24,3 +24,15 @@ export const svgCode3 = `
 </svg>
 `;
 
+export const svgCode4 = `
+<svg xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewBox="0 0 65 65" fill="none">
+  <circle cx="32.5" cy="32.3008" r="32" fill="url(#paint0_linear_1826_5151)"/>
+  <defs>
+    <linearGradient id="paint0_linear_1826_5151" x1="0.5" y1="0.300781" x2="33.7633" y2="77.538" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F2A5FF"/>
+      <stop offset="1" stop-color="#561AD9"/>
+    </linearGradient>
+  </defs>
+</svg>
+`;
+

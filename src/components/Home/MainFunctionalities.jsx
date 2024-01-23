@@ -6,7 +6,7 @@ const MainFunctionalities = () => {
     return (
         <div className="parallax-tilt-container">
             <ParallaxTilt
-                scale={1.2}
+                scale={1.17}
                 transitionSpeed={1500}
                 tiltMaxAngleX={15}
                 tiltMaxAngleY={15}

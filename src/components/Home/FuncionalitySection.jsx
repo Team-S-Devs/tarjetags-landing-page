@@ -1,4 +1,10 @@
 import React from 'react';
+import { svgCode4 } from "../../utils/svgData";
+import "../../styles/Home/FuncionalityPage.css";
+
+const createSvgImage = (svgCode) => `data:image/svg+xml;base64,${btoa(svgCode)}`;
+
+const imgSrc2 = createSvgImage(svgCode4);
 
 const FuncionalitySection = ({ title, imgSrc, altText, description }) => {
   return (
@@ -7,7 +13,7 @@ const FuncionalitySection = ({ title, imgSrc, altText, description }) => {
         <div className='icon'>
           <div className='icon-center'>
             <img className="first-image" src={imgSrc} alt={altText} />
-            <img src="https://i.ibb.co/6FhS3Wd/Ellipse-62-removebg-preview.png" alt="Descripción de la imagen" />
+            <img className='icon-background' src={imgSrc2} alt="Descripción de la imagen" />
           </div>
         </div>
         <div className='text-section'>
