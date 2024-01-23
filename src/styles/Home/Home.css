@@ -1,3 +1,20 @@
+.home-page {
+  position: relative;
+}
+
+.svg-container {
+  position: absolute;
+  width: 80%;
+  height: 80px; /* Ajusta la altura según sea necesario */
+  z-index: 0; /* Valor más alto para que esté encima de ParallaxCard */
+  padding-left: 600px;
+}
+
+.svg-content {
+  width: 80%;
+  height: 80%;
+}
+
 .customize-container {
   padding: 40px;
   display: grid;

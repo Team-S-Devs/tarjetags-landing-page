@@ -1,0 +1,175 @@
+@import url('../../global.css');
+
+.funcionality-conteiner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+}
+
+.parallax-section,
+.title-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex: 1 0 100%;
+    align-self: stretch;
+}
+
+.parallax-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://i.ibb.co/q06smqs/imagenjgp.jpg');
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+    z-index: -1;
+    background-attachment: fixed;
+}
+
+.title-section {
+    flex-direction: column;
+    gap: 2px;
+}
+
+.title-section h3 {
+    margin-bottom: 30px;
+    color: rgba(86, 26, 217, 1);
+    text-align: center;
+
+}
+
+.fun-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    max-width: none;
+    margin-top: 10px;
+}
+
+.fun-container{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    max-width: none;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 65px; 
+    flex: 1;
+}
+
+.text-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 20px;
+    gap: 6px;
+}
+
+.title-text {
+    color: var(--Black-letter, #000);
+    display: flex;
+    width: 100%;
+    text-align: left;
+}
+
+.icon-center {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    position: relative;
+}
+
+.first-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;   
+}
+
+.subtext-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: stretch;
+    color: rgba(2, 1, 5, 0.68);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    text-align: left;
+}
+
+.button-container-t {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    max-width: 1140px;
+    margin-top: 15px;
+}
+
+@media (min-width: 749px) {
+    .funcionality-conteiner {
+        flex-direction: row;
+    }
+
+    .parallax-section,
+    .title-section {
+        order: 0;
+    }
+
+    .parallax-section {
+        flex: 0 0 50%;
+    }
+
+    .title-section {
+        flex: 0 0 50%;
+    }
+
+    .fun-section {
+        max-width: none;
+        order: 1;
+        flex: 1; 
+    }
+
+    .button-container-t {
+        order: 2;
+    }
+    .icon,
+    .text-section {
+        flex: 1; 
+    }
+
+    .title-section h3 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 749px) {
+
+  .icon {
+    max-width: 40px;
+  }
+
+  .icon-background {
+    max-width: 55px; 
+  }
+}
