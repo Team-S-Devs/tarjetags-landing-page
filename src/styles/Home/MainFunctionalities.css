@@ -1,0 +1,21 @@
+.parallax-tilt-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.centered-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.centered-image {
+    width: 267px;
+    height: 503px;
+    object-fit: cover; 
+}
+
