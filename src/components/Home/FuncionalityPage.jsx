@@ -15,15 +15,15 @@ const imgSrc3 = createSvgImage(svgCode3);
 const FuncionalityPage = () => {
     return (
         <div className="container">
+            <div className="title-section">
+                <h3>Funcionalidades Principales</h3>
+            </div>
             <div className='funcionality-conteiner'>
                 <div className="parallax-section">
                     <img className="background-image" src="https://i.ibb.co/q06smqs/imagenjgp.jpg" alt="Esta imagen debe estar detrás de ParallaxCard" />
                     <ParallaxCard />
                 </div>
                 <div className='allfun'>
-                    <div className="title-section">
-                        <h3>Funcionalidades Principales</h3>
-                    </div>
                     <div className="fun-section">
                         <FuncionalitySection
                             title="Potencia tus servicios"

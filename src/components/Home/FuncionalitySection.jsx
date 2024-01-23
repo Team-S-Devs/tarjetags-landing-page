@@ -3,7 +3,6 @@ import { svgCode4 } from "../../utils/svgData";
 import "../../styles/Home/FuncionalityPage.css";
 
 const createSvgImage = (svgCode) => `data:image/svg+xml;base64,${btoa(svgCode)}`;
-
 const imgSrc2 = createSvgImage(svgCode4);
 
 const FuncionalitySection = ({ title, imgSrc, altText, description }) => {
