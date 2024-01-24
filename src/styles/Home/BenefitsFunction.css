@@ -1,26 +1,34 @@
-.benefit-section {
+@import url('../../global.css');
+
+.benefit-section-benefit {
     display: flex;
+    width: 100%;
     height: auto;
     justify-content: center;
     background: linear-gradient(90deg, #733EE8 0%, #561AD9 100%);
-    color: white;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    width: 100%; /* Asegúrate de que ocupe el ancho completo */
 }
 
-.parallax-section-benefit {
+
+.funcionality-conteiner-benefit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+}
+
+.parallax-section-benefit,
+.title-section-benefit {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
     flex: 1 0 100%;
     align-self: stretch;
+}
+
+.parallax-section-benefit {
     position: relative;
     overflow: hidden;
-    max-width: none; /* Asegúrate de que no tenga un ancho máximo */
-    z-index: 1; /* Establece un índice z alto para que esté por encima del background */
 }
 
 .background-image-benefit {
@@ -29,68 +37,97 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-size: cover; /* O background-size: 100% 100%; */
+    background-size: cover;  
     background-position: top;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    z-index: 0; /* Establece un índice z más bajo para que esté detrás del contenido */
+ 
+
 }
 
-.container-row-benefit {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
+.comment-benefit {
+    font-size: 18px; /* Tamaño de fuente predeterminado */
+    line-height: 1.4; /* Altura de línea predeterminada */
+    max-width: 500px; /* Ancho máximo del comentario */
+    margin: 0 auto; /* Centra el comentario horizontalmente */
+    text-align: center; /* Centra el texto dentro del comentario */
+    color: white;
 }
 
-.container-botton-benefit {
-    display: flex;
+
+.title-section-benefit {
     flex-direction: column;
-    align-items: center;
-    padding-bottom: 25px;
-    justify-content: center;
+    gap: 2px;
 }
 
-.box-advantage-benefit {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding: 30px 30px;
-}
-
-.benefit-section h4 {
-    width: 100%;
+.title-section-benefit h3 {
+    margin-bottom: 10px;
+    margin-top: 20px;
+    color: white;
     text-align: center;
 }
 
-.button-container-benefit {
+.fun-section-benefit {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    max-width: none;
+    margin-top: 10px;
+}
+
+
+
+.button-container-t-benefit {
     display: flex;
     justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    max-width: 1140px;
+    margin-top: 15px;
 }
 
-@media screen and (max-width: 959px) {
-    .box-advantage-benefit {
-        padding: 20px 15px;
-    }
-}
-
-@media screen and (max-width: 719px) {
-    .container-row-benefit {
-        flex-direction: column;
-        gap: 0px;
+@media (min-width: 749px) {
+    .funcionality-conteiner-benefit {
+        flex-direction: row;
     }
 
-    .box-advantage-benefit {
+    .parallax-section-benefit,
+    .title-section-benefit {
+        order: 0;
+    }
+
+    .parallax-section-benefit {
+        flex: 0 0 50%;
+    }
+
+    .title-section-benefit {
+        flex: 0 0 50%;
+    }
+
+    .fun-section-benefit {
         max-width: none;
-        padding: 15px 15px;
+        order: 1;
+        flex: 1; 
     }
 
-    .benefit-section h5 {
-        text-align: center;
+    .button-container-t-benefit {
+        order: 2;
+    }
+}
+
+@media (max-width: 749px) {
+    .background-image-benefit {
+        background-attachment: scroll;
+        background-size: contain; /* Cambiado de cover a contain */
     }
 
-    .benefit-section p {
-        text-align: center;
-        max-width: 500px;
+    .icon-benefit {
+        max-width: 40px;
+    }
+
+    .icon-background-benefit {
+        max-width: 55px; 
     }
 }
