@@ -18,7 +18,7 @@ const BenefitsFunction = () => {
         opacity: 1,
         from: { opacity: 0 },
         reset: true,
-        config: { tension: 50, friction: 20 }, // Ajusta estos valores para cambiar la velocidad de la animación
+        config: { tension: 40, friction: 20 }, 
         onRest: () => setIndex((prevIndex) => (prevIndex + 1) % comments.length),
     });
 
