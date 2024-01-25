@@ -17,7 +17,7 @@
     height: 175px;
 }
 
-.flickity-viewport{
+.carousel .flickity-viewport{
     height: 175px !important;
 
 }
