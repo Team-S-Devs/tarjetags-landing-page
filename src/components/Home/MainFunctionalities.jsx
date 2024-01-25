@@ -13,7 +13,7 @@ const MainFunctionalities = () => {
             >
                 <div className="centered-content">
                     <img
-                        src="https://marea-alcalina-resources.s3.amazonaws.com/landing_catalog_mockup_image_4.webp"
+                        src="https://i.postimg.cc/V657vNgn/Preview-tarjeta.png"
                         alt="Centrado con perspectiva"
                         className="centered-image"
                     />

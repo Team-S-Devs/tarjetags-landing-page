@@ -18,33 +18,35 @@ const Faq = () => {
   return (
     <>
       <BannerTittleHelp />
-      <div className="center-title">
-        <Typography variant="h5" fontWeight="bold">Preguntas Frecuentes</Typography>
-      </div>
-      <div className={`center-container ${isExpanded ? 'expanded' : ''}`}>
-        <div className="accordion-column">
-          {firstHalf.map((question, index) => (
-            <CustomAccordion
-              key={index}
-              id={question.id}
-              ariaControls={question.ariaControls}
-              heading={question.heading}
-              content={question.content}
-              onExpand={handleExpand}
-            />
-          ))}
+      <div className="container">
+        <div className="center-title">
+          <Typography variant="h5" fontWeight="bold">Preguntas Frecuentes</Typography>
         </div>
-        <div className="accordion-column">
-          {secondHalf.map((question, index) => (
-            <CustomAccordion
-              key={index}
-              id={question.id}
-              ariaControls={question.ariaControls}
-              heading={question.heading}
-              content={question.content}
-              onExpand={handleExpand}
-            />
-          ))}
+        <div className={`center-container ${isExpanded ? 'expanded' : ''}`}>
+          <div className="accordion-column">
+            {firstHalf.map((question, index) => (
+              <CustomAccordion
+                key={index}
+                id={question.id}
+                ariaControls={question.ariaControls}
+                heading={question.heading}
+                content={question.content}
+                onExpand={handleExpand}
+              />
+            ))}
+          </div>
+          <div className="accordion-column">
+            {secondHalf.map((question, index) => (
+              <CustomAccordion
+                key={index}
+                id={question.id}
+                ariaControls={question.ariaControls}
+                heading={question.heading}
+                content={question.content}
+                onExpand={handleExpand}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </>

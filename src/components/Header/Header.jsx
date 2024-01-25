@@ -1,6 +1,7 @@
 import "../../styles/Header.css";
 import { useState, useEffect } from "react";
 import PropTypes from 'prop-types'
+import logo from '../../assets/logoTarjetags.png';
 
 const Header = ({ currentlyPage, isLoggedTheUser }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,7 +27,7 @@ const Header = ({ currentlyPage, isLoggedTheUser }) => {
   return (
     <header className={`header ${scrolled ? 'fix-header' : ''}`}>
       <div className="container header">
-      <img src="" alt="Logo tarjetags" className="logo-tarjetags" />
+      <img src={logo} alt="Logo tarjetags" className="logo-tarjetags" />
 
       <nav className={` menu ${isOpen ? "active" : ""} `}>
         <a
