@@ -6,7 +6,22 @@ import BenefitsFunction from "../components/Home/BenefitsFunction";
 import "../styles/Home/Home.css";
 
 const Home = () => {
+    const [isUserLogged, setIsUserLogged] = useState(false);
 
+    useEffect(() => {
+        const handleAuthStateChange = () => {
+          onAuthStateChanged(auth, (user) => {
+            if (user) {
+              setIsUserLogged(true);
+            } else {
+              setIsUserLogged(false);
+            }
+          });
+        };
+    
+        handleAuthStateChange();
+      }, []);
+    
   return (
     <>
     <div className="home-page">
