@@ -1,12 +1,10 @@
 import "../../styles/Home/Cover.css";
 import Spline from "@splinetool/react-spline";
-import { useState, useEffect } from 'react';
+
 import imageCover from "../../assets/mancha.svg";
 
 
 const Cover = () => {
-  
-
   
   return (
     

@@ -160,7 +160,7 @@
 
 @media screen and (max-width: 960px){
     .container-carousel-home-benefit{
-        height: 500px;
+        height: 440px;
     }
 }
 
@@ -178,9 +178,16 @@
     }
 }
 
+@media screen and (max-width: 600px){
+    .container-carousel-home-benefit{
+        height: 350px;
+    }
+    
+}
+
 @media screen and (max-width: 480px){
     .container-carousel-home-benefit{
-        height: 400px;
+        height: 340px;
     }
 
     .flickity-button{
@@ -202,4 +209,10 @@
     }
 
     
+}
+
+@media screen and (max-width: 374px) {
+    .container-carousel-home-benefit{
+        height: 390px;
+    }
 }
