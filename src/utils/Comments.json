@@ -1,7 +1,14 @@
 [
-    { "text": "Olvídate de PDFs pesados. Nuestros menús digitales ofrecen navegación sin zoom y actualizaciones en tiempo real." },
-    { "text": "Diseña catálogos en minutos con una interfaz fácil e inteligencia artificial para descripciones atractivas." },
-    { "text": "Recibe pedidos directos, simplificando la toma de decisiones para una experiencia de cliente mejorada." },
-    { "text": "Refuerza tu marca con una integración perfecta en tu sitio web, ofreciendo un catálogo digital único en línea." }
-  ]
+    { "text": "Olvídate de PDFs pesados. Nuestros menús digitales ofrecen navegación sin zoom y actualizaciones en tiempo real.",
+      "title": "Menús digitales" 
+     },
+    { "text": "Diseña catálogos en minutos con una interfaz fácil e inteligencia artificial para descripciones atractivas.",
+      "title": "Catálogos digitales"
+     },
+    { "text": "Recibe pedidos directos, simplificando la toma de decisiones para una experiencia de cliente mejorada.",
+      "title": "Ejemplo 3 " },
+    { "text": "Refuerza tu marca con una integración perfecta en tu sitio web, ofreciendo un catálogo digital único en línea.",
+      "title": "Ejemplo 4"
+    }
+]
   

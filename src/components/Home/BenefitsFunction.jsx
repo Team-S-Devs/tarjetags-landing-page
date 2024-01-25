@@ -5,6 +5,10 @@ import StartButton from "./StartButton";
 import { svgCode6 } from "../../utils/svgData";
 import "../../styles/Home/BenefitsFunction.css";
 import commentsData from '../../utils/Comments.json';
+import { useRef } from 'react';
+import { useEffect } from 'react';
+import Flickity from 'flickity';
+import 'flickity/css/flickity.css';
 
 const createSvgImage = (svgCode) => `data:image/svg+xml;base64,${btoa(svgCode)}`;
 const imgSrc4 = createSvgImage(svgCode6);
@@ -12,34 +16,56 @@ const imgSrc4 = createSvgImage(svgCode6);
 const BenefitsFunction = () => {
     const [index, setIndex] = React.useState(0);
 
-    const comments = commentsData.map((comment) => comment.text);
+    
+   
+    const carouselRef = useRef(null);
+    const flickityInstance = useRef(null);
+   
 
-    const props = useSpring({
-        opacity: 1,
-        from: { opacity: 0 },
-        reset: true,
-        config: { tension: 40, friction: 20 }, 
-        onRest: () => setIndex((prevIndex) => (prevIndex + 1) % comments.length),
-    });
+    useEffect(() => {
+   
+        flickityInstance.current = new Flickity(carouselRef.current, {
+          
+          autoplay: true,
+          prevNextButtons: true,
+          pageDots: false,
+          contain: true,
+             wrapAround: true,
+        });
+        return () => {
+            if(flickityInstance.current){
+                flickityInstance.current.destroy();
+            }
+        }
+    }, []);
+
+
+
+
 
     return (
         <div className="benefit-section-benefit">
-            <div className="container-benefit">
+            <div className="container body-benefits">
                 <div className="title-section-benefit">
-                    <h3>Funcionalidades Principales</h3>
+                    <h3>Beneficios</h3>
                 </div>
                 <div className='funcionality-conteiner-benefit'>
-                    <div className='allfun-benefit'>
-                        <animated.div style={props} className="fun-section-benefit">
-                            <div className='comment-benefit'>{comments[index]}</div>
-                        </animated.div>
-                        <div className="button-container-t-benefit">
-                            <StartButton white={true} />
+                    <div className='container-carousel-home-benefit'>
+                        <div ref={carouselRef} className="carousel-home">
+                            {commentsData.map((comment, i) => (
+                                
+                                <div key={i} className="carousel-cell-home">
+                                    <div className="comment-benefit">
+                                        <StartButton white={true}/>
+                                        <h5>{comment.title}</h5>
+                                        <p>{comment.text}</p>
+                                        =
+                                    </div>
+                                </div>
+                            ))}
                         </div>
                     </div>
-                    <div className="parallax-section-benefit">
-                        <img className="background-image-benefit" src={imgSrc4} alt="Esta imagen debe estar detrás de ParallaxCard" />
-                        <ParallaxCard />
+                    <div className='container-card-benefit'>
                     </div>
                 </div>
             </div>

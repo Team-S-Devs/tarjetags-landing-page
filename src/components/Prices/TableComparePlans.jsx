@@ -8,7 +8,7 @@ import 'flickity/css/flickity.css';
 import ButtonTableComparison from './ButtonTableComparison';
 import '../../styles/Prices/CarouselButtons.css';
 import plans from "../../utils/plans.json";
-import ButtonCardPrice from './ButtonCardPrice';
+
 
 function TableComparePlans() {
     const carouselRef = useRef(null);
