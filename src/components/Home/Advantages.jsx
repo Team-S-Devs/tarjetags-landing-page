@@ -7,6 +7,7 @@ import { BsUiChecksGrid } from "react-icons/bs";
 import { BsBrush } from "react-icons/bs";
 import { Star } from "@mui/icons-material";
 import StartButton from "./StartButton";
+
 const Advantages = () => {
     return (
         <div className="advantages-section">

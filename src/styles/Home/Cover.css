@@ -13,8 +13,9 @@
   display: flex;
   height: calc(100vh - 80px);
   width: 100%;
-  max-height: calc(100vh - 80px);
+  max-height: 1080px;
   min-height: 830px;
+
   position: relative;
   background-size:cover;
   background-position: center;

@@ -1,9 +1,9 @@
 import React from 'react';
 import FuncionalitySection from './FuncionalitySection';
 import ParallaxCard from "./MainFunctionalities";
-import "../../styles/Home/FuncionalityPage.css";
 import StartButton from "./StartButton";
-import { svgCode, svgCode1, svgCode2, svgCode3 } from "../../utils/svgData";
+import { svgCode, svgCode1, svgCode2, svgCode3, svgCode7 } from "../../utils/svgData";
+import "../../styles/Home/FuncionalityPage.css";
 
 const createSvgImage = (svgCode) => `data:image/svg+xml;base64,${btoa(svgCode)}`;
 
@@ -11,18 +11,23 @@ const imgSrc = createSvgImage(svgCode);
 const imgSrc1 = createSvgImage(svgCode1);
 const imgSrc2 = createSvgImage(svgCode2);
 const imgSrc3 = createSvgImage(svgCode3);
+const imgSrc7 = createSvgImage(svgCode7);
 
 const FuncionalityPage = () => {
     return (
         <div className="container">
+
             <div className="title-section">
                 <h3>Funcionalidades Principales</h3>
             </div>
+
             <div className='funcionality-conteiner'>
+                
                 <div className="parallax-section">
-                    <img className="background-image" src="https://i.ibb.co/q06smqs/imagenjgp.jpg" alt="Esta imagen debe estar detrás de ParallaxCard" />
+                    <img className="background-image" src={imgSrc7} alt="Esta imagen debe estar detrás de ParallaxCard" />
                     <ParallaxCard />
                 </div>
+
                 <div className='allfun'>
                     <div className="fun-section">
                         <FuncionalitySection
@@ -56,6 +61,7 @@ const FuncionalityPage = () => {
                     </div>
                 </div>
             </div>
+
         </div>
     );
 };

@@ -1,32 +1,18 @@
 [
-    {
-        "id": 1,
-        "image": "https://i.postimg.cc/gkmw3qt6/mujer1.jpg",
-        "comment": "¡Tarjetags ha simplificado mi vida como emprendedora! Ahora puedo compartir todos mis enlaces importantes en un solo lugar. ¡Excelente aplicación!"
-    },
-    {
-        "id": 2,
-        "image": "https://i.postimg.cc/WbhBWxyR/hombre1.jpg",
-        "comment": "Estoy encantado con Tarjetags. Es intuitiva, fácil de usar y me ha ayudado a organizar mis redes sociales y enlaces de una manera más profesional."
-    },
-    {
-        "id": 3,
-        "image": "https://i.postimg.cc/k4W4bBxc/mujer2.jpg",
-        "comment": "¡Increíble herramienta! Mis seguidores ahora pueden acceder fácilmente a mis contenidos más importantes gracias a Tarjetags. ¡Altamente recomendada!"
-    },
-    {
-        "id": 4,
-        "image": "https://i.postimg.cc/QxwRR0LF/hombre2.jpg",
-        "comment": "Como diseñador, la estética es crucial para mí. Tarjetags no solo es funcional sino que también tiene un diseño limpio y atractivo que se adapta perfectamente a mi marca."
-    },
-    {
-        "id": 5,
-        "image": "https://i.postimg.cc/9Q9vVZVJ/hombre3.jpg",
-        "comment": "Gracias a Tarjetags, ahora puedo dirigir el tráfico a todas mis plataformas con facilidad. Es una herramienta esencial para cualquier persona con presencia en línea."
-    },
-    {
-        "id": 6,
-        "image": "https://i.postimg.cc/bwMNVQgg/mujer3.jpg",
-        "comment": "Estaba buscando una manera sencilla de compartir mis enlaces y encontré en Tarjetags la solución perfecta. ¡No puedo estar más feliz con los resultados!"
-    }
+  {
+      "text": "Olvídate de PDFs pesados. Nuestros menús digitales ofrecen una experiencia de navegación sin zoom, con actualizaciones en tiempo real para mantener siempre la información fresca y accesible.",
+      "title": "Menús Digitales"
+  },
+  {
+      "text": "Diseña catálogos en cuestión de minutos con nuestra interfaz intuitiva. Crea descripciones atractivas y cautivadoras para destacar tus productos y servicios, dándole un toque profesional a tu catálogo digital.",
+      "title": "Catálogos Digitales"
+  },
+  {
+      "text": "Simplifica la toma de decisiones al recibir pedidos directos a través de nuestra plataforma. Mejora la experiencia del cliente al agilizar el proceso, brindando un servicio más eficiente y satisfactorio.",
+      "title": "Procesamiento de Pedidos"
+  },
+  {
+      "text": "Refuerza tu presencia en línea con una integración perfecta de nuestro catálogo digital en tu sitio web. Ofrece a tus clientes una experiencia única y atractiva mientras exploran tus productos y servicios.",
+      "title": "Integración en Sitio Web"
+  }
 ]
