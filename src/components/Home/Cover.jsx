@@ -1,18 +1,32 @@
 import "../../styles/Home/Cover.css";
 import Spline from "@splinetool/react-spline";
+import { useState, useEffect } from 'react';
+import imageCover from "../../assets/mancha.svg";
+
 
 const Cover = () => {
+  
+
+  
   return (
-    <div className="cover-container">
-      <div className="cover-sub-container left">
-        <h1 className="slogan-cover">Conéctate de Forma Digital:</h1>
-        <p className="paragraph-slogan-cover">Tus Tarjetas, Tu Red, Tu Éxito</p>
-        <a href="/sign-up" className="sign-up-cover">
-          Registrate
-        </a>
-      </div>
-      <div className="cover-sub-container right">
-        <Spline scene="https://prod.spline.design/JN0USfxoeS2AdOoT/scene.splinecode" className="spline-cover-one" />
+    
+    <div className="cover-container-background">
+      <div className=" container cover-container">
+        <div className="text-cover">
+          <h1 className="slogan-cover">Conéctate de Forma Digital con Targetags</h1>
+          <p className="paragraph-slogan-cover">Crea tarjetas de presentación irresistibles que te abran puertas y te conecten con oportunidades ilimitadas.</p>
+          <a href="/sign-up" className="sign-up-cover">
+            Registrate
+          </a>
+        </div>
+        <div className="cover-sub-container">
+          
+          
+          <img className="image-cover" src={imageCover} alt="cover-image" />
+         <Spline scene={"https://draft.spline.design/mTewcjp1QDLvHqoq/scene.splinecode"}  className="spline-cover-one" />
+          
+         
+        </div>
       </div>
     </div>
   );
