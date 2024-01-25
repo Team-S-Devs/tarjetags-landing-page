@@ -6,8 +6,8 @@ import BenefitsFunction from "../components/Home/BenefitsFunction";
 import "../styles/Home/Home.css";
 
 const Home = () => {
-    const [isUserLogged, setIsUserLogged] = useState(false);
-
+    /* const [isUserLogged, setIsUserLogged] = useState(false); */
+/* 
     useEffect(() => {
         const handleAuthStateChange = () => {
           onAuthStateChanged(auth, (user) => {
@@ -20,7 +20,7 @@ const Home = () => {
         };
     
         handleAuthStateChange();
-      }, []);
+      }, []); */
     
   return (
     <>
