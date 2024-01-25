@@ -1,9 +1,22 @@
-.footer {
-    width: 100%;
-    min-height: 600px;
+@import url("../global.css");
+
+.footer-container{
     background-color: #0C0C0C;
     display: grid;
-    grid-template-columns: 20% 60% 20%;
+}
+
+.footer {
+    width: 100%;
+    grid-template-columns: 10% 10% 10%;
+}
+
+.footer-colomn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding: 20px; /* Adjust padding as needed */
 }
 
 .footer-element-container {
@@ -12,54 +25,66 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     color: #fff;
 }
+
+.footer-sections-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
 
 .footer-menu {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
 .footer-subelements-container {
-    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+.subelement-title, .subtitle-footer {
+    font-size: 20px;
+}
+
+.top-footer {
+    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.subelement-title {
-    font-size: 24px;
+    align-items: flex-start;
+    justify-content: flex-start; 
+    color: #fff;
 }
 
 .footer-description,
 .social-medias {
-    padding: 40px;
-    gap: 40px;
+    padding: 20px;
+    gap: 20px;
 }
 
 .social-medias-section {
-    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
     gap: 20px;
-    flex-wrap: wrap;
 }
 
 .footer-subelement-menu-link {
-    color: #fff;
+    color: #8C8C8C;
     text-decoration: none;
     font-size: 14px;
     cursor: pointer;
+
 }
 
 .description-tarjetags-footer {
@@ -67,18 +92,66 @@
     text-align: justify;
 }
 
-@media (max-width: 1310px) {
+.social-media-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    width: 100%;
+}
+
+@media (max-width: 425px) {
     .footer {
         height: auto;
-        padding: 40px 0;
+        padding: 10px 0;
         display: flex;
-        flex-direction: row;
+        flex-direction: column; /* Change to column layout for mobile */
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
     }
+
     .footer-menu {
         gap: 2em;
         padding: 1em;
+        flex-direction: column;
     }
+
+    .footer-sections-container {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .footer-subelements-container {
+        display: flex;
+        flex-direction: column; /* Change to column layout for subelements */
+        align-items: center;
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .footer-menu {
+        gap: 2em;
+        padding: 1em;
+        flex-wrap: nowrap;
+    }
+  
+      .footer-subelements-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: left;
+        width: 100%;
+    }
+    
 }
