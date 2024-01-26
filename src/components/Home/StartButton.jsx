@@ -1,9 +1,15 @@
 import { Button } from "@mui/material";
 import React from "react";
+import { linkHome} from "../../utils/Links.js";
 
 const StartButton = ({white}) => {
+
+    const navigateToLogin = () => {
+        window.location.href = linkHome;
+
+    }
     return (
-       <Button variant="contained"
+       <Button variant="contained" onClick={navigateToLogin}
         sx={{
             backgroundColor: white? ("white") : "#733EE8", 
             borderRadius:"25px",

@@ -2,6 +2,7 @@ import "../../styles/Header.css";
 import { useState, useEffect } from "react";
 import PropTypes from 'prop-types'
 import logo from '../../assets/logoTarjetags.png';
+import { linkHome, linkLogin, linkRegister } from "../../utils/Links";
 
 const Header = ({ currentlyPage, isLoggedTheUser }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,7 +10,6 @@ const Header = ({ currentlyPage, isLoggedTheUser }) => {
 
   const openMenu = () => {
     setIsOpen(!isOpen);
-    document.querySelector('.body').classList.toggle('menu-open')
   };
 
   const handleScroll = () => {
@@ -49,6 +49,18 @@ const Header = ({ currentlyPage, isLoggedTheUser }) => {
           Faq
         </a>
 
+        <div className="login-options">
+          {isLoggedTheUser? (<> <a href={linkHome} className="options-logged go-dashboard button-nav">
+            Panel Principal
+          </a>
+          </>)
+              :(<><a href={linkLogin} className="sign-option">
+                  Iniciar sesión
+                </a>
+                <a href={linkRegister} className="sign-option border-button">
+                  Registrarse
+                </a></>)}
+        </div>
         
       </nav>
 
@@ -56,10 +68,10 @@ const Header = ({ currentlyPage, isLoggedTheUser }) => {
           isOpen ? "open" : "" } `}
         >
         <div className="options-sign-container">
-          <a href="/log-in" className="sign-option">
+          <a href={linkLogin} className="sign-option button-nav" >
             Iniciar sesión
           </a>
-          <a href="/sign-up" className="sign-option sign-up">
+          <a href={linkRegister} className="sign-option sign-up button-nav">
             Registrarse
           </a>
         </div>
@@ -71,16 +83,10 @@ const Header = ({ currentlyPage, isLoggedTheUser }) => {
         } `}
       >
         <div className="option-logged-container">
-          <a href="/" className="options-logged go-dashboard">
+          <a href={linkHome} className="options-logged go-dashboard">
             Panel Principal
           </a>
-          <a href="/" className="options-logged user-profile">
-            <img
-              src="https://images.pexels.com/photos/16963436/pexels-photo-16963436/free-photo-of-a-woman-with-blue-hair-making-the-peace-sign.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              alt="User image profile"
-              className="user-image-profile"
-            />
-          </a>
+          
         </div>
       </div>
 
