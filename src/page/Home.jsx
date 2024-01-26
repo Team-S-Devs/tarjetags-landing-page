@@ -1,10 +1,13 @@
-import { onAuthStateChanged } from 'firebase/auth';
-import React from 'react'
-import { auth } from '../utils/firebase-config';
+import Advantages from "../components/Home/Advantages";
+import Cover from "../components/Home/Cover";
+import FuncionalityPage from "../components/Home/FuncionalityPage";
+import TimeLineSteps from "../components/Home/TimeLineSteps";
+import BenefitsFunction from "../components/Home/BenefitsFunction";
+import "../styles/Home/Home.css";
 
 const Home = () => {
-    const [isUserLogged, setIsUserLogged] = useState(false);
-
+    /* const [isUserLogged, setIsUserLogged] = useState(false); */
+/* 
     useEffect(() => {
         const handleAuthStateChange = () => {
           onAuthStateChanged(auth, (user) => {
@@ -17,11 +20,19 @@ const Home = () => {
         };
     
         handleAuthStateChange();
-      }, []);
+      }, []); */
     
   return (
-    <div>Home</div>
-  )
-}
+    <>
+    <div className="home-page">
+        <Cover />
+        <FuncionalityPage />
+        <BenefitsFunction />
+        <TimeLineSteps />
+        <Advantages />
+      </div>
+    </>
+  );
+};
 
-export default Home
+export default Home;
