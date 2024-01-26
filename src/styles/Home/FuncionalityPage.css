@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px 10px;
+    
 }
 
 .parallax-section,
@@ -41,7 +41,7 @@
 }
 
 .title-section h3 {
-    margin-bottom: 30px;
+    
     color: #561ad9;
     text-align: center;
 
@@ -171,4 +171,10 @@
   .icon-background {
     max-width: 55px; 
   }
+}
+
+@media screen and (max-width: 480px){
+    .parallax-tilt-container{
+        padding: 30px 0 !important;
+    }
 }

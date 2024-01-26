@@ -1,7 +1,7 @@
 import "../../styles/Home/Cover.css";
 import Spline from "@splinetool/react-spline";
-
 import imageCover from "../../assets/mancha.svg";
+import { linkHome } from "../../utils/Links";
 
 
 const Cover = () => {
@@ -13,7 +13,7 @@ const Cover = () => {
         <div className="text-cover">
           <h1 className="slogan-cover">Conéctate de Forma Digital con Targetags</h1>
           <p className="paragraph-slogan-cover">Crea tarjetas de presentación irresistibles que te abran puertas y te conecten con oportunidades ilimitadas.</p>
-          <a href="/sign-up" className="sign-up-cover">
+          <a href={linkHome} className="sign-up-cover">
             Registrate
           </a>
         </div>
