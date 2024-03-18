@@ -66,11 +66,11 @@ const Plans = () => {
               </TabList>
             </div>
 
-            <TabPanel value="plans" sx={{ backgroundColor: "#EDF0F7", width: "100%"}}>
+            <TabPanel value="plans" sx={{ backgroundColor: "#EDF0F7", width: "100%", padding: "0"}}>
               <PricesSection />
               <TableComparePlans />
             </TabPanel>
-            <TabPanel value="plansPartner" sx={{ backgroundColor: "#EDF0F7", width: "100%" }}>
+            <TabPanel value="plansPartner" sx={{ backgroundColor: "#EDF0F7", width: "100%", padding: "0" }}>
               <PricesSection />
             </TabPanel>
           </Box>
