@@ -59,5 +59,65 @@
             "Dominio personalizado",
             "Clasificación de productos"
          ]
+    },
+    {
+        "idPlan": 4,
+        "namePlan":"Bronce",
+        "pricePlan": 500,
+        "currency": "Bs",
+        "renovacion": "Anual",
+        "libreDePublicidad": true,
+        "nombreDominio": true,
+        "servicioTiendaMax": 0,
+        "botonesAdicionales": ["Ilimitado"],
+        "clasificacionDeProductos":  true,
+        "comisionDeVenta": 10,
+        "descuentoPases": 0,
+        "descripcion": [
+            "Comision de venta 10%",
+            "Suscriptores descuentos 0%",
+            "Costo de pase 5.00 Bs",
+            "Minimo pases 100"
+         ]
+    },
+    {
+        "idPlan": 5,
+        "namePlan":"Plata",
+        "pricePlan": 2250,
+        "currency": "Bs",
+        "renovacion": "Anual",
+        "libreDePublicidad": true,
+        "nombreDominio": true,
+        "servicioTiendaMax":250,
+        "botonesAdicionales": ["Ilimitado"],
+        "clasificacionDeProductos":  true,
+        "comisionDeVenta": 0,
+        "descuentoPases": 0,
+        "descripcion": [
+            "Comision de venta 20%",
+            "Suscriptores descuentos 10%",
+            "Costo de pase 15.00 Bs",
+            "Minimo pases 150"
+         ]
+    },
+    {
+        "idPlan": 6,
+        "namePlan":"Premium",
+        "pricePlan": 7500,
+        "currency": "Bs",
+        "renovacion": "Anual",
+        "libreDePublicidad": true,
+        "nombreDominio": true,
+        "servicioTiendaMax":250,
+        "botonesAdicionales": ["Ilimitado"],
+        "clasificacionDeProductos":  true,
+        "comisionDeVenta": 0,
+        "descuentoPases": 0,
+        "descripcion": [
+            "Comision de venta 35%",
+            "Suscriptores descuentos 15%",
+            "Costo de pase 30.00 Bs",
+            "Minimo pases 250"
+         ]
     }
 ]
