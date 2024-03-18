@@ -27,7 +27,6 @@ const CardPrice = (idPlan) => {
 
     return(
       <div className="card-price-container">
-         
          <h2 className="card-tittle">
             {currentPlan.namePlan.toUpperCase()}
          </h2>
