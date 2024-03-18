@@ -43,12 +43,6 @@ const Header = ({ currentlyPage, isLoggedTheUser }) => {
           Planes
         </a>
         <a
-          href="/plans_socio"
-          className={`menu-option ${currentlyPage === "plansSocio" ? "active" : ""}`}
-        >
-          Planes de Socio
-        </a>
-        <a
           href="/faq"
           className={`menu-option ${currentlyPage === "faq" ? "active" : ""}`}
         >
