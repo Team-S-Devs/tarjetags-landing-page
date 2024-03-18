@@ -112,6 +112,17 @@
   
 }
 
+.text-benefit-card{
+    font-family: var(--font-family-general);
+    color: #1B0844;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal; 
+    font-size: 20px;
+    width: 100%;
+  
+}
+
 .btn-price {
     position: relative;
     border-radius: 100px;
