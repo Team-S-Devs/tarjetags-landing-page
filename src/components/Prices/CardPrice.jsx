@@ -1,7 +1,6 @@
 import React from "react";
 import "../../styles/Prices/CardPrice.css"
 import { BsCheckCircleFill } from "react-icons/bs";
-import { TbPointFilled } from "react-icons/tb";
 import ButtonCardPrice from "./ButtonCardPrice";
 import plans from "../../utils/plans.json";
 
