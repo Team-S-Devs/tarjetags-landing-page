@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../styles/Prices/BannerTittle.css';
-import { BsGlobe } from "react-icons/bs";
 import { BsWindowStack } from "react-icons/bs";
+import { BsPalette } from "react-icons/bs";
 import { BsTrophy } from "react-icons/bs";
 
 const MiComponente = () => {
@@ -9,7 +9,6 @@ const MiComponente = () => {
   return (
     <div className='background'>
         <div className='images-container'>
-      
         <img src="https://i.postimg.cc/FFkqrfd6/Untitled-1-1920x979.png" alt="img-plans" className="img-plans" draggable="false"></img>
           </div>
         <div className='text-container'>  
@@ -17,8 +16,8 @@ const MiComponente = () => {
           <h3>Elige tu plan y comienza a crecer</h3>
           <div className='benefits-container'>
             <div className='benefits'>
-              <BsGlobe className='icon'/>
-              <h4>Dominio personalizado</h4>
+              <BsPalette className='icon'/>
+              <h4>Personalización</h4>
             </div>
             <div className='benefits'>
               <BsWindowStack className='icon'/>
@@ -26,7 +25,7 @@ const MiComponente = () => {
             </div>
             <div className='benefits'>
               <BsTrophy className='icon'/>
-              <h4>Impulsa tu alcanse</h4>
+              <h4>Impulsa tu alcance</h4>
             </div> 
           </div>
         </div>
