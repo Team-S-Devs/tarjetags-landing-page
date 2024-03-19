@@ -47,7 +47,6 @@
     border-radius: 15px; 
     height: 175px;
     
-    
   }
 
   .carousel-cell.is-selected .button-carousel {
@@ -58,7 +57,7 @@
     margin-top: 20px;
 }
 
-@media screen and (max-width: 958px){
+@media screen and (max-width: 767px){
     .carousel{
         display:block;
     }

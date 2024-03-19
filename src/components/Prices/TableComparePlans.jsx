@@ -13,32 +13,36 @@ import plans from "../../utils/plans.json";
 function TableComparePlans() {
     const carouselRef = useRef(null);
     const flickityInstance = useRef(null);
-    const [displayCells, setDisplayCells] = useState([false, false, true]);
+    const [displayCells, setDisplayCells] = useState([false, true, false]);
     let cellsReseted = false;
 
   useEffect(() => {
    
     flickityInstance.current = new Flickity(carouselRef.current, {
       
-      wrapAround: true,
+      wrapAround: window.innerWidth <= 443,
       autoplay: true,
       prevNextButtons: false,
-      initialIndex: 2,
+      initialIndex: 1,
       pageDots: true,
     });
     flickityInstance.current.resize();
 
     const handleResize = () => {
-      if (window.innerWidth > 958) {
-        setDisplayCells(Array(6).fill(true));
+      if (window.innerWidth > 767) {
+        setDisplayCells(Array(3).fill(true));
         cellsReseted = false;
       } else {
         if(!cellsReseted){
           setDisplayCells([false, false, true]);
-          flickityInstance.current.select(2);
+          flickityInstance.current.select(1);
           cellsReseted = true;
         }
       }
+
+      flickityInstance.current.options.wrapAround = window.innerWidth <= 443;
+      flickityInstance.current.resize();
+      
     };
 
     const handleSlideChange = (index) => {
@@ -47,13 +51,10 @@ function TableComparePlans() {
     };
 
     flickityInstance.current.on('change', handleSlideChange);
-    
-    
-
     window.addEventListener('resize', handleResize);
     
     if(window.innerWidth > 958){
-      setDisplayCells(Array(6).fill(true));
+      setDisplayCells(Array(3).fill(true));
     }
 
     return () => {
