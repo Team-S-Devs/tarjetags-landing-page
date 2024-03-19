@@ -39,12 +39,10 @@ const CardPrice = (idPlan) => {
 
          {blockDescription()}
           <div className="button-container">
-            {/*<button className="btn-price">
-              <span className="text-button-price">
-                 Adquirir
-              </span>
-            </button>*/}
-            <ButtonCardPrice/>
+           
+           {/*TODO: IMPLEMENTAR 
+           <ButtonCardPrice/>
+           */}
           </div>
       </div>
     );

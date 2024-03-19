@@ -35,18 +35,7 @@
         "heading": "¿Qué es la clasificación de producto?",
         "content": "La clasificación de producto se define con diferentes categorias dentro de la tarjeta digital, proporcionando asi una estructura organizada."
     },
-    {
-        "id": "panel7a-header",
-        "ariaControls": "panel7a-content",
-        "heading": "¿A qué nos referimos con el servicio Tienda Max?",
-        "content": "El servicio Tienda Max destaca por ofrecer todos los servicios al máximo que tu tarjeta de presentación puede brindar."
-    },
-    {
-        "id": "panel8a-header",
-        "ariaControls": "panel8a-content",
-        "heading": "¿A qué nos referimos con Dominio personalizado?",
-        "content": "Se trata de un nombre único que se muestra después de www. en las direcciones web. Esto resulta en una dirección web personalizada, como www.tarjetag.com/."
-    },
+
     {
         "id": "panel9a-header",
         "ariaControls": "panel9a-content",
