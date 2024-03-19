@@ -23,7 +23,7 @@ const BoxBenefit = (props) =>{
         } else if(nameButton === "Ilimitado"){
           return <h4>Todos</h4>;
         }else{
-          console.log('No se encontro el icono');
+  
           return null;
         }
     }

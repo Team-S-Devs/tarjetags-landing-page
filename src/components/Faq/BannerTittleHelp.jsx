@@ -6,7 +6,7 @@ const BannerHelp = () => {
     <div className='background'>
         <div className='text-container'>  
           <h3>Centro de ayuda</h3>
-          <h2>¿En que podemos ayudarlo?</h2>
+          <h2>¿En qué podemos ayudarlo?</h2>
           <div className='soport-container'>
           <div className='soport'>
             <h4>Aquí encontrará las respuestas, las funciones más valoradas y soporte</h4>
