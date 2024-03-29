@@ -26,7 +26,7 @@ const MiComponente = () => {
             </div>
             <div className='benefits'>
               <BsTrophy className='icon'/>
-              <h4>Impulsa tu alcanse</h4>
+              <h4>Impulsa tu alcance</h4>
             </div> 
           </div>
         </div>
