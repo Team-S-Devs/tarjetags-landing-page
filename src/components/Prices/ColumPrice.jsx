@@ -13,13 +13,9 @@ const ColumPrice = ({idPlan }) => {
     <div className={`column-price`}>
       <BoxTitle title={currentPlan.namePlan} currency='Bs' amount={currentPlan.pricePlan}/>
       <BoxBenefit text={currentPlan.renovacion}/>
-      <BoxBenefit iconType={currentPlan.libreDePublicidad}/>
-      <BoxBenefit iconType={currentPlan.nombreDominio}/>
       <BoxBenefit text={currentPlan.servicioTiendaMax}/>
       <BoxBenefit listButtons={currentPlan.botonesAdicionales}/>
       <BoxBenefit iconType={currentPlan.clasificacionDeProductos}/>
-      <BoxBenefit text={`${currentPlan.comisionDeVenta} %`} />
-      <BoxBenefit text={`${currentPlan.descuentoPases} %`} />
     </div>
   ) : null;
 }
