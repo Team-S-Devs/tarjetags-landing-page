@@ -130,6 +130,10 @@
    .images-container{
        display: none;
    }
+
+   .text-container{
+       padding-bottom: 30px;
+   }
 }
 
 @media screen and (max-width: 599px){
@@ -139,6 +143,11 @@
 
     .benefits-container{
         padding: 0px;
+    }
+
+    .text-container{
+        padding-top: 20px;
+        padding-bottom: 60px;
     }
     
 }

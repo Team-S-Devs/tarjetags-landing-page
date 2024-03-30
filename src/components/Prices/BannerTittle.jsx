@@ -1,8 +1,9 @@
 import React from 'react';
 import '../../styles/Prices/BannerTittle.css';
-import { BsGlobe } from "react-icons/bs";
-import { BsWindowStack } from "react-icons/bs";
 import { BsTrophy } from "react-icons/bs";
+import { BsInboxes } from "react-icons/bs";
+import { BsUiChecksGrid } from "react-icons/bs";
+
 
 const MiComponente = () => {
 
@@ -16,16 +17,16 @@ const MiComponente = () => {
           <h3>Elige tu plan y comienza a crecer</h3>
           <div className='benefits-container'>
             <div className='benefits'>
-              <BsGlobe className='icon'/>
-              <h4>Nombre de dominio personalizado</h4>
+              <BsInboxes className='icon'/>
+              <h4>Planes a tu medida</h4>
             </div>
             <div className='benefits'>
-              <BsWindowStack className='icon'/>
-              <h4>Libre de anuncios</h4>
+              <BsUiChecksGrid className='icon'/>
+              <h4>Amplia tus servicios</h4>
             </div>
             <div className='benefits'>
               <BsTrophy className='icon'/>
-              <h4>Impulsa tu alcanse</h4>
+              <h4>Impulsa tu alcance</h4>
             </div> 
           </div>
         </div>
