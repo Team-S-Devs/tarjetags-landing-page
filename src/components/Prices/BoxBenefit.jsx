@@ -22,6 +22,8 @@ const BoxBenefit = (props) =>{
           return <h4>Ninguno</h4>;
         } else if(nameButton === "Ilimitado"){
           return <h4>Todos</h4>;
+        }else if(nameButton === "Ilimitado sin Whatsapp y Maps"){
+            return <h4>Todos menos WhatsApp y Maps</h4>;
         }else{
           console.log('No se encontro el icono');
           return null;
