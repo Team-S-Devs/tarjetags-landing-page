@@ -1,12 +1,8 @@
 {
     "benefits":[
         "Renovacion",
-        "Liber de anuncios RC",
-        "Dominio personalizado",
-        "Servicio tienda max",
-        "Botones adicionales",
-        "Clasificacion de productos/servicios",
-        "Comision de venta",
-        "Descuento de pases"
+        "tienda",
+        "Botones",
+        "Admin"
     ]
 }
