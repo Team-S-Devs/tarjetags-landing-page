@@ -10,8 +10,7 @@ const MiComponente = () => {
   return (
     <div className='background'>
         <div className='images-container'>
-      
-        <img src="https://i.postimg.cc/FFkqrfd6/Untitled-1-1920x979.png" alt="img-plans" className="img-plans" draggable="false"></img>
+        <img src="../src/assets/pantalla1.png" alt="img-plans" className="img-plans" draggable="false"></img>
           </div>
         <div className='text-container'>  
           <h2>PLANES PRECIOS</h2>
