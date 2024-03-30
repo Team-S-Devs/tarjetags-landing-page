@@ -15,7 +15,7 @@ const CardPrice = (idPlan) => {
             return(
               <div key={index} className="benefit-price">
                 <BsCheckCircleFill className="icone"/>
-                <h6 className="text-benefit">{benefit}</h6>
+                <h6 className="text-benefit-card">{benefit}</h6>
               </div>
             );
           })}
