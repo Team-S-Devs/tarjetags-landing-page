@@ -1,8 +1,21 @@
 {
-    "benefits":[
-        "Renovacion",
-        "Tienda",
-        "Botones",
-        "Admin"
+    "benefits": [
+      {
+        "name": "Renovacion",
+        "description": "Ten una suscripción actualizada."
+      },
+      {
+        "name": "Tienda",
+        "description": "Accede a nuestra tienda."
+      },
+      {
+        "name": "Botones",
+        "description": "Añade nuevas redes sociales."
+      },
+      {
+        "name": "Admin",
+        "description": "Obtén herramientas de administración."
+      }
     ]
-}
+  }
+  
