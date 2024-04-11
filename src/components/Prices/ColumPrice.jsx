@@ -16,6 +16,7 @@ const ColumPrice = ({idPlan }) => {
       <BoxBenefit text={currentPlan.servicioTiendaMax}/>
       <BoxBenefit listButtons={currentPlan.botonesAdicionales}/>
       <BoxBenefit iconType={currentPlan.clasificacionDeProductos}/>
+      <BoxBenefit iconType={currentPlan.clasificacionDeProductos}/>
     </div>
   ) : null;
 }

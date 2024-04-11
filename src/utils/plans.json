@@ -7,6 +7,7 @@
         "renovacion": "Solo 3 meses",
         "servicioTiendaMax":10,
         "botonesAdicionales": ["Ilimitado sin Whatsapp y Maps"],
+        "clasificacionDeProductos":  false,
         "descripcion": [
             "Caducidad en 3 meses",
             "Con anuncios",
@@ -22,6 +23,7 @@
         "renovacion": "Anual",
         "servicioTiendaMax":100,
         "botonesAdicionales": ["Ilimitado"],
+        "clasificacionDeProductos":  false,
         "descripcion": [
             "Renovación Anual",
             "Sin anuncios",

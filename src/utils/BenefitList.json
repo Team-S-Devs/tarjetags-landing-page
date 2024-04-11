@@ -1,21 +1,26 @@
 {
     "benefits": [
       {
-        "name": "Renovacion",
-        "description": "Ten una suscripción actualizada."
+        "name": "Renovación",
+        "description": ""
       },
       {
         "name": "Tienda",
-        "description": "Accede a nuestra tienda."
+        "description": "Añade una sección con una cantidad de  productos y servicios."
       },
       {
         "name": "Botones",
-        "description": "Añade nuevas redes sociales."
+        "description": "Vincula tus redes sociales a tu tarjeta."
       },
       {
         "name": "Admin",
-        "description": "Obtén herramientas de administración."
+        "description": " Vincula otras tarjetas de tus colaboradores."
+      },
+      {
+        "name": "Divison de productos y/o servicios",
+        "description": "Clasifica tus productos y/o servicios por secciones."
       }
+
     ]
   }
   
