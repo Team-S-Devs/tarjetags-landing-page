@@ -77,7 +77,8 @@
     align-items: center;
     justify-content: center;
     background: white;
-    height: 70px;
+    height: auto;
+    min-height: 100px;
     width: 100%;
     min-width: 100px;
     padding-left: 10px;
