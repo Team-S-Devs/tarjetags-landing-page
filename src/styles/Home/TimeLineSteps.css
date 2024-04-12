@@ -12,7 +12,7 @@
     width: 75%;
     height: 3px;
     position: absolute;
-    background-color: #733EE8;
+    background-color: #662483;
     top: 110px;
     left: 12.5%;
     z-index: 1;
@@ -25,7 +25,7 @@
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background-color: #733EE8;
+    background-color: #662483;
     position: absolute;
     top: 97px;
     left: 50%;
@@ -88,12 +88,12 @@
 .icon-timeline{
     width: 50px;
     height: 50px;
-    color: #733EE8;
+    color: #662483;
 }
 
 .section-timeline h4{
     text-align: center;
-    color: #733EE8;
+    color: #662483;
     margin-bottom: 10px;
 }
 

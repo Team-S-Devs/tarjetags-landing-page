@@ -11,14 +11,14 @@ const StartButton = ({white}) => {
     return (
        <Button variant="contained" onClick={navigateToLogin}
         sx={{
-            backgroundColor: white? ("white") : "#733EE8", 
+            backgroundColor: white? ("white") : "#662483", 
             borderRadius:"25px",
             width:"200px",
             height:"50px",
-            color: white? ("#733EE8") : "white",
+            color: white? ("#662483") : "white",
             fontSize:"20px",
             '&:hover': {
-                backgroundColor: white? "white": "#733EE8",
+                backgroundColor: white? "white": "#662483",
                 }
             }} >
               Comenzar

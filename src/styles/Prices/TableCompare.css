@@ -11,7 +11,7 @@
   padding-bottom: 66px;
   width: 100%;
   height: auto;
-  background: linear-gradient(90deg, #733EE8 0%, #561AD9 100%);
+  background: linear-gradient(90deg, #662483 0%, #561AD9 100%);
 }
 .tittle-text-table{
     color: var(--White, #FFF);
@@ -118,6 +118,10 @@
     width: 85%;
     height: 1px;
     background: var(--Black-light-letter, #8C8C8C);
+}
+
+.text-description{
+    color: #555;
 }
 
 .divisor-line-vertical{
@@ -227,6 +231,10 @@
 @media screen and (max-width: 767px){
     .box-content-top{
         display: none;
+    }
+
+    .text-description{
+        padding-left: 2px;
     }
 
     .column-benefit{

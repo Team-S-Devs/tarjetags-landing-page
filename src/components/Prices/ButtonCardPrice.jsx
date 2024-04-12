@@ -24,12 +24,12 @@ const ButtonCardPrice = (props) => {
         width: width ? `${width}px` : "100%",
         height: height ? `${height}px` : "100%",
         borderRadius: "100px",
-        border: "1px solid #733EE8",
+        border: "1px solid #662483",
         background: "rgba(255, 255, 255, 0.00)",
         transition: "opacity 2.5s",
 
         ":hover":{
-          background: "linear-gradient(90deg, #733EE8 0%, #DB00FF 100%)",
+          background: "linear-gradient(90deg, #662483 0%, #DB00FF 100%)",
         },
         }}
         onMouseEnter={handleMouseEnter}
@@ -62,7 +62,7 @@ const ButtonCardPrice = (props) => {
             fontStyle: "normal",
             fontWeight: 400,
             lineHeight: "normal",
-            background: "linear-gradient(90deg, #733EE8 0%, #DB00FF 100%)",
+            background: "linear-gradient(90deg, #662483 0%, #DB00FF 100%)",
             backgroundClip: "text",
             WebkitBackgroundClip: "text",
             WebkitTextFillColor: "transparent",

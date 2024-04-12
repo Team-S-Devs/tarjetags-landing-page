@@ -14,7 +14,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-	background-color: #733EE8;
+	background-color: #662483;
 	border: 2.5px solid #fff;
 	border-radius: 10px;
 }
@@ -32,6 +32,6 @@ body {
 }
 
 :root {
-	--primary-color: #733EE8;
+	--primary-color: #662483;
 	--second-color: #1B0844;
 }

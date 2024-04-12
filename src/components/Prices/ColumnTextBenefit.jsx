@@ -10,7 +10,7 @@ const ColumnTextBenefit = () => {
           <div key={index} className="box-content text-benefit">
             <div className="divisor-line"></div>
             <h4>{benefit.name}</h4>
-            <h6>{benefit.description}</h6>
+            <h5 className="text-description">{benefit.description}</h5>
           </div>
         ));
       };
