@@ -9,6 +9,7 @@ import TabContext from "@mui/lab/TabContext";
 import TabList from "@mui/lab/TabList";
 import TabPanel from "@mui/lab/TabPanel";
 import "../styles/Prices/Plans.css";
+import { Helmet } from "react-helmet";
 
 const Plans = () => {
   const [value, setValue] = useState("plans");
@@ -20,6 +21,9 @@ const Plans = () => {
   return (
     <>
       <BannerTitle />
+      <Helmet>
+        <title>Targetag | Planes</title>
+      </Helmet>
       <Box className="box-Container">
         <TabContext value={value}>
           <Box className="tab-Container">
