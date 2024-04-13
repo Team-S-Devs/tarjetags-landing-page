@@ -376,4 +376,7 @@
 }
 
 @media (max-width: 460px) {
+  .logo-tarjetags {
+    content: url('src/assets/logoMobile.png');
+  }
 }
