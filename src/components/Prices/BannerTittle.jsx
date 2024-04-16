@@ -3,7 +3,7 @@ import '../../styles/Prices/BannerTittle.css';
 import { BsTrophy } from "react-icons/bs";
 import { BsInboxes } from "react-icons/bs";
 import { BsUiChecksGrid } from "react-icons/bs";
-import imagenplanes from "../../assets/planes.png";
+import imagenplanes from "../../assets/imgPlans.svg";
 
 const MiComponente = () => {
 
