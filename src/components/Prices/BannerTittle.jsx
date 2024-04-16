@@ -3,14 +3,14 @@ import '../../styles/Prices/BannerTittle.css';
 import { BsTrophy } from "react-icons/bs";
 import { BsInboxes } from "react-icons/bs";
 import { BsUiChecksGrid } from "react-icons/bs";
-
+import imagenplanes from "../../assets/planes.png";
 
 const MiComponente = () => {
 
   return (
     <div className='background'>
         <div className='images-container'>
-        <img src="../src/assets/planes.png" alt="img-plans" className="img-plans" draggable="false"></img>
+        <img src={imagenplanes} alt="img-plans" className="img-plans" draggable="false"></img>
           </div>
         <div className='text-container'>  
           <h2>PLANES PRECIOS</h2>
