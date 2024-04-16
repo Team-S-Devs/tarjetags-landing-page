@@ -19,6 +19,8 @@
 .logo-tarjetags {
   height: 60px;
   width: auto;
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 
 .menu {
@@ -377,6 +379,8 @@
 
 @media (max-width: 460px) {
   .logo-tarjetags {
-    content: url('src/assets/logoMobile.png');
+    content: url('../../src/assets/logoMobile.png');
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
