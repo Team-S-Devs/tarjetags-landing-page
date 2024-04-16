@@ -9,7 +9,8 @@ const ColumnTextBenefit = () => {
         return benefitList.benefits.map((benefit, index) => (
           <div key={index} className="box-content text-benefit">
             <div className="divisor-line"></div>
-            <h4>{benefit}</h4>
+            <h4>{benefit.name}</h4>
+            <h5 className="text-description">{benefit.description}</h5>
           </div>
         ));
       };

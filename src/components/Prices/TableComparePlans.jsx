@@ -13,32 +13,36 @@ import plans from "../../utils/plans.json";
 function TableComparePlans() {
     const carouselRef = useRef(null);
     const flickityInstance = useRef(null);
-    const [displayCells, setDisplayCells] = useState([false, false, true, false, false, false]);
+    const [displayCells, setDisplayCells] = useState([false, true, false]);
     let cellsReseted = false;
 
   useEffect(() => {
    
     flickityInstance.current = new Flickity(carouselRef.current, {
       
-      wrapAround: true,
+      wrapAround: window.innerWidth <= 443,
       autoplay: true,
       prevNextButtons: false,
-      initialIndex: 2,
+      initialIndex: 1,
       pageDots: true,
     });
     flickityInstance.current.resize();
 
     const handleResize = () => {
-      if (window.innerWidth > 958) {
-        setDisplayCells(Array(6).fill(true));
+      if (window.innerWidth > 767) {
+        setDisplayCells(Array(3).fill(true));
         cellsReseted = false;
       } else {
         if(!cellsReseted){
-          setDisplayCells([false, false, true, false, false, false]);
-          flickityInstance.current.select(2);
+          setDisplayCells([false, false, true]);
+          flickityInstance.current.select(1);
           cellsReseted = true;
         }
       }
+
+      flickityInstance.current.options.wrapAround = window.innerWidth <= 443;
+      flickityInstance.current.resize();
+      
     };
 
     const handleSlideChange = (index) => {
@@ -47,13 +51,10 @@ function TableComparePlans() {
     };
 
     flickityInstance.current.on('change', handleSlideChange);
-    
-    
-
     window.addEventListener('resize', handleResize);
     
     if(window.innerWidth > 958){
-      setDisplayCells(Array(6).fill(true));
+      setDisplayCells(Array(3).fill(true));
     }
 
     return () => {
@@ -98,24 +99,12 @@ function TableComparePlans() {
             <div className='carousel-cell' onClick={()=> handleCellClick(2)}>
                 <ButtonTableComparison title={getTitlePlanById(3)} currency='Bs' amount={getAmountById(3)}/>
             </div>
-            <div className='carousel-cell' onClick={()=> handleCellClick(3)}>
-                <ButtonTableComparison title={getTitlePlanById(4)} currency='Bs' amount={getAmountById(4)}/>
-            </div>
-            <div className='carousel-cell' onClick={()=> handleCellClick(4)}>
-                <ButtonTableComparison title={getTitlePlanById(5)} currency='Bs' amount={getAmountById(5)}/>
-            </div>
-            <div className='carousel-cell' onClick={()=> handleCellClick(5)}>
-                <ButtonTableComparison title={getTitlePlanById(6)} currency='Bs' amount={getAmountById(6)}/>
-            </div>
         </div>
         <div className='table-container'>
           <ColumnTextBenefit/>
           {displayCells[0]? (<ColumPrice idPlan='1'/>) : null}
           {displayCells[1]? (<ColumPrice idPlan='2'/>) : null}
           {displayCells[2]? (<ColumPrice idPlan='3'/>) : null}
-          {displayCells[3]? (<ColumPrice idPlan='4'/>) : null}
-          {displayCells[4]? (<ColumPrice idPlan='5'/>) : null}
-          {displayCells[5]? (<ColumPrice idPlan='6'/>) : null}
         </div>
     </div>
   )

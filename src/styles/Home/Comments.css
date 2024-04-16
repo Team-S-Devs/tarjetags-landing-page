@@ -4,7 +4,7 @@
     overflow: hidden;
     position: relative;
     padding: 40px;
-    background: linear-gradient(90deg, #733EE8 0%, #561AD9 100%);
+    background: linear-gradient(90deg, #662483 0%, #561AD9 100%);
 }
 
 .subtitle {
@@ -37,7 +37,7 @@
     display: grid;
     place-items: center;
     cursor: pointer;
-    color: #733EE8;
+    color: #662483;
     display: block;
     transition: all 0.5s ;
 }

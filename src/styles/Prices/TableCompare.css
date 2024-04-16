@@ -11,7 +11,7 @@
   padding-bottom: 66px;
   width: 100%;
   height: auto;
-  background: linear-gradient(90deg, #733EE8 0%, #561AD9 100%);
+  background: linear-gradient(90deg, #662483 0%, #561AD9 100%);
 }
 .tittle-text-table{
     color: var(--White, #FFF);
@@ -77,7 +77,8 @@
     align-items: center;
     justify-content: center;
     background: white;
-    height: 70px;
+    height: auto;
+    min-height: 100px;
     width: 100%;
     min-width: 100px;
     padding-left: 10px;
@@ -117,6 +118,11 @@
     width: 85%;
     height: 1px;
     background: var(--Black-light-letter, #8C8C8C);
+}
+
+.text-description{
+    color: #555;
+    padding-left: 5px;
 }
 
 .divisor-line-vertical{
@@ -222,10 +228,14 @@
         gap: 5px;
     }
 }
-
-@media screen and (max-width: 958px){
+/* TODO: Valor origin 958, revisar */
+@media screen and (max-width: 767px){
     .box-content-top{
         display: none;
+    }
+
+    .text-description{
+        padding-left: 5px;
     }
 
     .column-benefit{
@@ -273,25 +283,22 @@
         padding-left: 16px;
         padding-top: 16px;
         padding-bottom: 16px;
-        
     }
 
     .table-container{
         padding-top: 16px;
         padding-bottom: 16px;
-
     }
-
-    
 }
 
 @media screen and (max-width: 480px) {
-    
-
-
 .text-benefit h4{
     font-size: 14px;
     padding-left: 5px;
 }  
-  
+
+.box-content {
+    height: 130px;
+}
+
 }

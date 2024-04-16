@@ -4,10 +4,12 @@ import FuncionalityPage from "../components/Home/FuncionalityPage";
 import TimeLineSteps from "../components/Home/TimeLineSteps";
 import BenefitsFunction from "../components/Home/BenefitsFunction";
 import "../styles/Home/Home.css";
+import { titleMain } from "../utils/constant";
+import { Helmet } from "react-helmet";
 
 const Home = () => {
-    /* const [isUserLogged, setIsUserLogged] = useState(false); */
-/* 
+  /* const [isUserLogged, setIsUserLogged] = useState(false); */
+  /* 
     useEffect(() => {
         const handleAuthStateChange = () => {
           onAuthStateChanged(auth, (user) => {
@@ -21,10 +23,13 @@ const Home = () => {
     
         handleAuthStateChange();
       }, []); */
-    
+
   return (
     <>
-    <div className="home-page">
+      <div className="home-page">
+        <Helmet>
+          <title>{titleMain}</title>
+        </Helmet>
         <Cover />
         <FuncionalityPage />
         <BenefitsFunction />

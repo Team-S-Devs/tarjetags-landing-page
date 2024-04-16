@@ -5,7 +5,7 @@
     width: 100%;
     height: auto;
     justify-content: center;
-    background: linear-gradient(90deg, #733EE8 0%, #561AD9 100%);
+    background: linear-gradient(90deg, #662483 0%, #561AD9 100%);
 }
 
 .body-benefits{
@@ -112,7 +112,7 @@
 }
 
 .body-benefits .flickity-button-icon{
-    color: #733EE8;
+    color: #662483;
 }
 
 .carousel-home .flickity-viewport{
@@ -207,8 +207,6 @@
     .comment-benefit{
         gap: 7px;
     }
-
-    
 }
 
 @media screen and (max-width: 374px) {

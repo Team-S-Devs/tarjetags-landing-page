@@ -10,9 +10,6 @@ const PricesSection = () => {
             <CardPrice idPlan={1}/>
             <CardPrice idPlan={2}/>
             <CardPrice idPlan={3}/>
-            <CardPrice idPlan={4}/>
-            <CardPrice idPlan={5}/>
-            <CardPrice idPlan={6}/>
         </div>
     </div>
     );

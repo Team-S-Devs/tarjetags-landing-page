@@ -4,6 +4,8 @@ import BannerTittleHelp from "../components/Faq/BannerTittleHelp";
 import CustomAccordion from "../components/Faq/CustomAccordion.jsx";
 import questions from "../utils/questionsData.json";
 import "../styles/FAQ/Faq.css";
+import { Helmet } from "react-helmet";
+import { titleFaq } from "../utils/constant";
 
 const Faq = () => {
   const halfLength = Math.ceil(questions.length / 2);
@@ -18,6 +20,9 @@ const Faq = () => {
   return (
     <>
       <BannerTittleHelp />
+      <Helmet>
+        <title>{titleFaq}</title>
+      </Helmet>
       <div className="container">
         <div className="center-title">
           <Typography variant="h5" fontWeight="bold">Preguntas Frecuentes</Typography>

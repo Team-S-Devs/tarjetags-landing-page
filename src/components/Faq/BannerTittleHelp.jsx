@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../styles/Prices/BannerTittle.css';
+import imagenFaq from "../../assets/soporte-tecnico.png";
 
 const BannerHelp = () => {
   return (
@@ -14,7 +15,7 @@ const BannerHelp = () => {
           </div>
         </div>
         <div className='images-container'>
-        <img src="https://i.postimg.cc/4x45fzPv/soporte-tecnico.png" alt="img-plans" className="img-plans" draggable="false"></img>
+        <img src={imagenFaq} alt="img-plans" className="img-plans" draggable="false"></img>
         </div>
     </div>
   );
