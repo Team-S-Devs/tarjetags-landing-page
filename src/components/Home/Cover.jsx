@@ -2,8 +2,24 @@ import "../../styles/Home/Cover.css";
 import Spline from "@splinetool/react-spline";
 import imageCover from "../../assets/mancha.svg";
 import { linkHome } from "../../utils/Links";
+import { useState, useEffect } from "react";
+
 
 const Cover = () => {
+
+  /* Aqui ira la logica de obtener el valor de logueado */
+
+  const [messageButton, setMessageButton] = useState("");
+  const [isLogged, setIsLogged] = useState(false);
+
+  useEffect(() => {
+    if (isLogged) {
+      setMessageButton("Mi dashboard");
+    } else {
+      setMessageButton("Registrate");
+    }
+  }, [isLogged]);
+  
   return (
     <div className="cover-container-background">
       <div className=" container cover-container">
@@ -16,7 +32,7 @@ const Cover = () => {
             te conecten con oportunidades ilimitadas.
           </p>
           <a href={linkHome} className="sign-up-cover">
-            Registrate
+            {messageButton}
           </a>
         </div>
         <div className="cover-sub-container">
