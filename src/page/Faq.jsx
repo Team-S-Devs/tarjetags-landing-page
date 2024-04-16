@@ -5,6 +5,7 @@ import CustomAccordion from "../components/Faq/CustomAccordion.jsx";
 import questions from "../utils/questionsData.json";
 import "../styles/FAQ/Faq.css";
 import { Helmet } from "react-helmet";
+import { titleFaq } from "../utils/constant";
 
 const Faq = () => {
   const halfLength = Math.ceil(questions.length / 2);
@@ -20,7 +21,7 @@ const Faq = () => {
     <>
       <BannerTittleHelp />
       <Helmet>
-        <title>Targetag | Faq</title>
+        <title>{titleFaq}</title>
       </Helmet>
       <div className="container">
         <div className="center-title">
