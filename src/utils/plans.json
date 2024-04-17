@@ -10,14 +10,13 @@
         "clasificacionDeProductos":  false,
         "descripcion": [
             "Caducidad en 3 meses",
-            "Con anuncios",
-            "Tienda de 10 productos",
-            "Dominio aleatorio"
+            "Tienda de hasta 10 productos",
+            "Todos los botones menos WhatsApp y Maps"
         ]
     },
     {
         "idPlan": 2,
-        "namePlan":"Standard",
+        "namePlan":"Estándar",
         "pricePlan": 150,
         "currency": "Bs",
         "renovacion": "Anual",
@@ -26,9 +25,8 @@
         "clasificacionDeProductos":  false,
         "descripcion": [
             "Renovación Anual",
-            "Sin anuncios",
-            "Tienda de 100 productos",
-            "Dominio personalizado"
+            "Tienda de hasta 100 productos",
+            "Todos los botones"
          ]
     },
     {
@@ -42,10 +40,10 @@
         "clasificacionDeProductos":  true,
         "descripcion": [
             "Renovación anual",
-            "Sin anuncios",
-            "Tienda de 250 productos",
-            "Dominio personalizado",
-            "Clasificación de productos"
+            "Tienda de hasta 250 productos",
+            "Todos los botones",
+            "Clasificación de productos",
+            "Administrador: Vincular otras cuentas"
          ]
     },
     {
@@ -80,7 +78,7 @@
     },
     {
         "idPlan": 6,
-        "namePlan":"Premium",
+        "namePlan":"Oro",
         "pricePlan": 7500,
         "currency": "Bs",
         "renovacion": "Anual",

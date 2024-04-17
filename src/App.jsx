@@ -29,8 +29,6 @@ function App() {
     handleAuthStateChange();
   }, []);
 
-  console.log(isLoggedTheUser)
-
   return (
     <BrowserRouter>
       <HeaderWithLocation isLoggedTheUser={isLoggedTheUser} />

@@ -11,6 +11,7 @@ import TabPanel from "@mui/lab/TabPanel";
 import "../styles/Prices/Plans.css";
 import { Helmet } from "react-helmet";
 import { titlePlans } from "../utils/constant";
+import marca from '../assets/Marca.svg'
 
 const Plans = () => {
   const [value, setValue] = useState("plans");
@@ -24,6 +25,12 @@ const Plans = () => {
       <BannerTitle />
       <Helmet>
         <title>{titlePlans}</title>
+        <meta
+          name="description"
+          content="Crea tarjetas de presentación irresistibles que te abran puertas y
+            te conecten con oportunidades ilimitadas."
+        />
+        <meta property="og:image" content={marca} />
       </Helmet>
       <Box className="box-Container">
         <TabContext value={value}>

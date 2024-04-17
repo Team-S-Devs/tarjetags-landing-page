@@ -29,6 +29,11 @@ const Home = () => {
       <div className="home-page">
         <Helmet>
           <title>{titleMain}</title>
+          <meta
+            name="description"
+            content="Crea tarjetas de presentación irresistibles que te abran puertas y
+            te conecten con oportunidades ilimitadas."
+          />
         </Helmet>
         <Cover />
         <FuncionalityPage />

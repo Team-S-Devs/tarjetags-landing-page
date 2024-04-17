@@ -22,6 +22,11 @@ const Faq = () => {
       <BannerTittleHelp />
       <Helmet>
         <title>{titleFaq}</title>
+        <meta
+            name="description"
+            content="Crea tarjetas de presentación irresistibles que te abran puertas y
+            te conecten con oportunidades ilimitadas."
+          />
       </Helmet>
       <div className="container">
         <div className="center-title">
