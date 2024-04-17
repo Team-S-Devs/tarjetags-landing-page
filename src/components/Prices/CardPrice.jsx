@@ -44,7 +44,7 @@ const CardPrice = (idPlan) => {
                  Adquirir
               </span>
             </button>*/}
-            <ButtonCardPrice/>
+            <ButtonCardPrice currentPlanName={currentPlan.namePlan}/>
           </div>
       </div>
     );

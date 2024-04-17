@@ -17,7 +17,7 @@ const ButtonTableComparison = (props) => {
           </div>
         </div>
         <div className="button-container-carousel">
-          <ButtonCardPrice width={100} height={35} />
+          <ButtonCardPrice width={100} height={35} currentPlanName={props.title} />
         </div>
       </div>
     </>
