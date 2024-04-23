@@ -4,23 +4,13 @@ import Carousel from "../components/Store/Carousel";
 import { db } from "../utils/firebase-config";
 import { useNavigate } from "react-router-dom";
 import { doc, getDoc } from "@firebase/firestore";
+import { Typography } from "@mui/material";
 
 const Store = () => {
     const [loadingGetting, setLoadingGetting] = useState(true);
     const navigate = useNavigate();
     const [elementsInfo, setElementsInfo] = useState({
-        title: "Tarjeta",
-        description: "",
-        profilePhoto: {
-          name: "profilePhoto",
-          file: null,
-          url: "",
-        },
-        coverPhoto: {
-          name: "coverPhoto",
-          file: null,
-          url: "",
-        },
+        products : [],
       });
 
     const [products, setProducts] = useState([]);
@@ -39,7 +29,7 @@ const Store = () => {
 
                 if (cardSnapshot.exists()) {
                     const cardFields = cardSnapshot.data();
-                    if (!cardFields.productCategories) cardFields["productCategories"] = [];
+                    if (!cardFields.categories) cardFields["categories"] = [];
                     if (!cardFields.products) cardFields["products"] = [];
                     if (!cardFields.theme) cardFields["theme"] = "light";
                     if (!cardFields.color) cardFields["color"] = "#FFFFFF";
@@ -61,18 +51,22 @@ const Store = () => {
             setIndexCarousel(0);
             setProducts(elementsInfo.products);
         } else {
-            const categoryProducts = elementsInfo.products.filter(prod => prod.category === actualCategory);
+            const categoryProducts = elementsInfo.products.filter(prod => prod.category == actualCategory);
             setIndexCarousel(0);
             setProducts(categoryProducts);
         }
-    }, [actualCategory, elementsInfo.products]);
+    }, [actualCategory]);
 
     const changeCategory = (id) => {
         setActualCategory(id);
     }
 
+    const isAProductVisible = () => {
+        return elementsInfo.products.some(prod => prod.show);
+      }
+
     const isNotCategoryEmpty = (cat) => {
-        return elementsInfo.products.some(prod => (prod.category === cat.id));
+        return elementsInfo.products.some(prod => (prod.category == cat.id && prod.show));
     }
 
     return (
@@ -102,18 +96,17 @@ const Store = () => {
                 `}
             </style>
 
-            
-
-            <div className="products-preview-container">
-                <div>
-                    Productos
-                </div>
-
-                {loadingGetting ? (
+            {loadingGetting ? (
                 <div className="loader_container_store">
                     <span className="loader_posFixed"></span>
-                </div>
-                ) : (elementsInfo.productCategories && 
+                </div>) :
+                
+            (elementsInfo.products.length > 0 && isAProductVisible()) ?
+                ( <div className="products-preview-container">
+                <Typography style={{ lineHeight: '1.4', textAlign:'center', marginBottom:'1rem'}} variant='h4' component='h1' color={color}>
+                 Productos
+                </Typography>
+                 {elementsInfo.categories && 
                  <> 
                 <div className="table-wrapper">
                     <style>{`
@@ -130,7 +123,7 @@ const Store = () => {
                                 <td key={"categ-" + 0}>
                                     <div className={"category_option"+(actualCategory === "0" ? " selected-cat" : "")} onClick={() => changeCategory("0")} style={{color: color}}>Todo</div>
                                 </td>
-                                {elementsInfo.productCategories.map((cat) => (
+                                {elementsInfo.categories.map((cat) => (
                                     isNotCategoryEmpty(cat) &&
                                     <td key={"categ-" + cat.id}>
                                         <div className={"category_option"+(actualCategory === cat.id ? " selected-cat" : "")} onClick={() => changeCategory(cat.id)} style={{color: color}}>{cat.title}</div>
@@ -143,9 +136,12 @@ const Store = () => {
                 <div className="carrousel-products">
                     <Carousel index={indexCarousel} products={products} elemInfo={elementsInfo} color={color}></Carousel>
                 </div> 
-                </>)
-                } 
+                </>}
             </div>
+                ) : <div className="cont-not-found">
+                    <div className="not-found-style"><h4>No hay productos disponibles</h4><p>¡Vuelva pronto!</p></div>
+                </div> 
+            }            
         </div>
     );
 };

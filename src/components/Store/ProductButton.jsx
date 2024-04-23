@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { MAIN_COLOR } from '../../utils/constant';
 
 const ProductButton = ({
     products = [],
@@ -14,7 +15,7 @@ const ProductButton = ({
     {(products[activeIndex].buttonAction.forWpp) ?
         <Link to={`https://wa.me/${products[activeIndex].buttonAction.wppNumber}?text=${wppMessage}`} target="_blank" className='obtain-preview-button' 
         style={{
-           backgroundColor: elemInfo.color,
+           backgroundColor: MAIN_COLOR,
            color: textColor
          }}>
         {products[activeIndex].buttonAction.buttonText}

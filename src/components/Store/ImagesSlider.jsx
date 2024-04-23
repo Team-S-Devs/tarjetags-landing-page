@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-// import { TRANSPARENT_SQUARE } from '../../utils/constants';
+import { TRANSPARENT_SQUARE } from '../../utils/constant';
 
 
 const ImagesSlider = ({
@@ -11,7 +11,7 @@ const ImagesSlider = ({
 
   const getImageFromProduct = () => {
     if (images[activeIndex].url != "") return images[activeIndex].url
-    else return "";
+    else return TRANSPARENT_SQUARE;
   }
   
   useEffect(() => {

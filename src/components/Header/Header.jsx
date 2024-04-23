@@ -53,7 +53,7 @@ const Header = ({ currentlyPage, isLoggedTheUser }) => {
               currentlyPage === "store" ? "active" : ""
             }`}
           >
-            Store
+            Tienda
           </a>
           <a
             href="/faq"
