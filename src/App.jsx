@@ -10,6 +10,7 @@ import PropTypes from "prop-types";
 import { Footer } from "./components/Footer/Footer";
 import { onAuthStateChanged } from 'firebase/auth';
 import { auth } from "./utils/firebase-config";
+import Store from "./page/Store";
 
 function App() {
   const [isLoggedTheUser, setIsLoggedTheUser] = useState(false);
@@ -17,7 +18,6 @@ function App() {
   useEffect(() => {
     const handleAuthStateChange = () => {
       onAuthStateChanged(auth, (user) => {
-        console.log(user)
         if (user) {
           setIsLoggedTheUser(true);
         } else {
@@ -35,6 +35,7 @@ function App() {
       <Routes>
         <Route path="/*" element={<Home />} />
         <Route path="/plans" element={<Plans />} />
+        <Route path="/store" element={<Store />} />
         <Route path="/faq" element={<Faq />} />
         <Route path="/sign-up" element={<SignUp />} />
         <Route path="/log-in" element={<LogIn />} />
