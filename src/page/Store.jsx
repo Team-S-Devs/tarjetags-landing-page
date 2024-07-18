@@ -5,6 +5,7 @@ import { db } from "../utils/firebase-config";
 import { useNavigate } from "react-router-dom";
 import { doc, getDoc } from "@firebase/firestore";
 import { Typography } from "@mui/material";
+import ProductsView from "../components/Store/ProductsView";
 
 const Store = () => {
     const [loadingGetting, setLoadingGetting] = useState(true);
@@ -134,7 +135,7 @@ const Store = () => {
                     </table>
                 </div> 
                 <div className="carrousel-products">
-                    <Carousel index={indexCarousel} products={products} elemInfo={elementsInfo} color={color}></Carousel>
+                    <ProductsView index={indexCarousel} products={products} elemInfo={elementsInfo} color={color}></ProductsView>
                 </div> 
                 </>}
             </div>
